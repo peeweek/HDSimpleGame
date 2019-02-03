@@ -461,7 +461,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0, g: 0, b: 0, a: 0.26666668}
-    m_HighlightedColor: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 0.27450982}
+    m_HighlightedColor: {r: 1, g: 0.6227085, b: 0.24056602, a: 0.5019608}
     m_PressedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.20392157}
     m_DisabledColor: {r: 0, g: 0, b: 0, a: 0}
     m_ColorMultiplier: 1
@@ -700,6 +700,7 @@ GameObject:
   - component: {fileID: 634347499}
   - component: {fileID: 634347498}
   - component: {fileID: 634347501}
+  - component: {fileID: 634347502}
   m_Layer: 0
   m_Name: OnStart
   m_TagString: Untagged
@@ -739,6 +740,7 @@ MonoBehaviour:
   OnMessageRecieved:
   - {fileID: 634347498}
   - {fileID: 634347501}
+  - {fileID: 634347502}
 --- !u!4 &634347500
 Transform:
   m_ObjectHideFlags: 0
@@ -770,6 +772,20 @@ MonoBehaviour:
   Targets:
   - GameObject: {fileID: 1920165657}
     State: 1
+--- !u!114 &634347502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634347497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e96e23fc0058b9438af30550fbe4943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: FocusUIAction
+  UIObjectToFocus: {fileID: 2028965619}
 --- !u!1 &640263372
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,7 +848,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640263372}
   m_LocalRotation: {x: 0.000076262586, y: -0.99959856, z: -0.0026889683, w: -0.028205065}
-  m_LocalPosition: {x: -0.88549864, y: 1.2925507, z: 1.3367071}
+  m_LocalPosition: {x: -0.88549864, y: 1.4, z: 1.3367071}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1527649284}
@@ -1263,7 +1279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 0, z: -10}
+  m_FollowOffset: {x: 0, y: 0.44744933, z: -10}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -1649,7 +1665,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0, g: 0, b: 0, a: 0.26666668}
-    m_HighlightedColor: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 0.07058824}
+    m_HighlightedColor: {r: 1, g: 0.6227085, b: 0.24056602, a: 0.5019608}
     m_PressedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0.20392157}
     m_DisabledColor: {r: 0, g: 0, b: 0, a: 0}
     m_ColorMultiplier: 1
