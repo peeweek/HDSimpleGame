@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: WhiteMesh
   m_Shader: {fileID: 4800000, guid: acb11588034f817448a5f3c11f5b5d59, type: 3}
-  m_ShaderKeywords: _NORMALMAP_TANGENT_SPACE
+  m_ShaderKeywords: _NORMALMAP_TANGENT_SPACE _WORLD_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -217,14 +217,15 @@ Material:
     - _UVDetail: 0
     - _UVEmissive: 0
     - _UseShadowThreshold: 0
+    - _World: 1
     - _WorldSize: 2
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 4
     - _ZTestModeDistortion: 4
     - _ZWrite: 1
     m_Colors:
-    - Color_522F24AE: {r: 0.8962264, g: 0.8962264, b: 0.8962264, a: 1}
-    - Color_F8B1D539: {r: 1, g: 1, b: 1, a: 0}
+    - Color_522F24AE: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 1}
+    - Color_F8B1D539: {r: 0.8867924, g: 0.8867924, b: 0.8867924, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}

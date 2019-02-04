@@ -107,11 +107,11 @@ MonoBehaviour:
   active: 1
   maxShadowDistance:
     m_OverrideState: 1
-    m_Value: 32
+    m_Value: 40
     min: 0
   cascadeShadowSplitCount:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 2
     min: 1
     max: 4
   cascadeShadowSplit0:
@@ -219,10 +219,10 @@ MonoBehaviour:
     m_Value: 12
     min: 1
   baseHeight:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 5
   meanHeight:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 10
     min: 1
   anisotropy:
