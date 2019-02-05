@@ -13,7 +13,14 @@ static class HDSimpleGamePlayFromHere
 
     private static void PlayFromHere_OnPlayFromHere(Vector3 position, Vector3 forward)
     {
-        var Player = Object.Instantiate((GameObject)Resources.Load("DefaultPlayer"));
-        Player.transform.position = position + forward;
+        var initialPosition = position + forward;
+        var initialForward = forward;
+        initialForward.Scale(new Vector3(1, 0, 1));
+        initialForward.Normalize();
+        var initialRotation = Quaternion.LookRotation(initialForward, Vector3.up);
+
+        var prefab = (GameObject)Resources.Load("DefaultPlayer");
+        var Player = Object.Instantiate(prefab, initialPosition, initialRotation);
+        Player.name = "(Play From Here)" + prefab.name;
     }
 }
