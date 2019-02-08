@@ -12,7 +12,7 @@ namespace GameplayIngredients.Interactions
         public override bool CanInteract(Interactive interactive)
         {
             Vector3 toInteractive = (interactive.transform.position - ReferencePoint.transform.position).normalized;
-            return Mathf.Acos(Vector3.Dot(toInteractive, ReferencePoint.transform.forward)) < Mathf.Deg2Rad * InteractionAngle;
+            return Mathf.Acos(Vector3.Dot(toInteractive, ReferencePoint.transform.forward)) < Mathf.Deg2Rad * InteractionAngle * 0.5f;
         }
 
         public override Interactive[] SortCandidates(IEnumerable<Interactive> candidates)
