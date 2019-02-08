@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 56271203771655331}
+  - component: {fileID: 803124967254017445}
   - component: {fileID: 5601277514729481102}
   m_Layer: 0
-  m_Name: Script_Close
+  m_Name: State Closed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,6 +32,22 @@ Transform:
   m_Father: {fileID: 8446004628740290319}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &803124967254017445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917265278416264444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcc3d684aff0c5b4290e088e4b8a735e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnStateEnter:
+  - {fileID: 5601277514729481102}
+  OnStateExit: []
+  OnStateUpdate: []
 --- !u!114 &5601277514729481102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,8 +97,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8446004628740290319}
-  - component: {fileID: 8446004628740290318}
-  - component: {fileID: 8446004628740290312}
+  - component: {fileID: 5148001222561227606}
   m_Layer: 0
   m_Name: DoorSystem_Double
   m_TagString: Untagged
@@ -111,20 +127,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &8446004628740290318
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8446004628740290321}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4, y: 2.6, z: 4}
-  m_Center: {x: 0, y: 1.3, z: 0}
---- !u!114 &8446004628740290312
+--- !u!114 &5148001222561227606
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,17 +136,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8446004628740290321}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75510bef0e49d8e4ea339b95845f15de, type: 3}
+  m_Script: {fileID: 11500000, guid: 0219af91f351df2429e921b320124912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnterMaxCount: 0
-  ExitMaxCount: 0
-  onTriggerEnter:
-  - {fileID: 8446004629692809762}
-  onTriggerExit:
-  - {fileID: 5601277514729481102}
-  OnlyInteractWithTag: 1
-  Tag: Player
+  DefaultState: State Closed
+  States:
+  - {fileID: 3851765771621300191}
+  - {fileID: 803124967254017445}
 --- !u!1 &8446004629458166460
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,9 +319,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8446004629692809765}
+  - component: {fileID: 3851765771621300191}
   - component: {fileID: 8446004629692809762}
   m_Layer: 0
-  m_Name: Script_Open
+  m_Name: State Open
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -342,6 +342,22 @@ Transform:
   m_Father: {fileID: 8446004628740290319}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3851765771621300191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8446004629692809764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcc3d684aff0c5b4290e088e4b8a735e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnStateEnter:
+  - {fileID: 8446004629692809762}
+  OnStateExit: []
+  OnStateUpdate: []
 --- !u!114 &8446004629692809762
 MonoBehaviour:
   m_ObjectHideFlags: 0
