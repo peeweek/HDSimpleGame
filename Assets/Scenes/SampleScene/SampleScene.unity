@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.06744318, g: 0.08891004, b: 0.13196816, a: 1}
+  m_IndirectSpecularColor: {r: 0.06744362, g: 0.0889105, b: 0.13196887, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2931,8 +2931,10 @@ GameObject:
   - component: {fileID: 667263118}
   - component: {fileID: 667263117}
   - component: {fileID: 667263116}
+  - component: {fileID: 667263120}
+  - component: {fileID: 667263119}
   m_Layer: 0
-  m_Name: OnStart
+  m_Name: 'On: GAME_START'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2952,7 +2954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: FullScreenFadeAction
   Fading: 0
-  Duration: 5
+  Duration: 2
   OnComplete: []
 --- !u!114 &667263117
 MonoBehaviour:
@@ -2969,6 +2971,7 @@ MonoBehaviour:
   MessageName: GAME_START
   OnMessageRecieved:
   - {fileID: 667263116}
+  - {fileID: 667263120}
 --- !u!4 &667263118
 Transform:
   m_ObjectHideFlags: 0
@@ -2984,6 +2987,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &667263119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667263115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 846d5f33f7af4014ea15adf7a92dc953, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: ToggleGameObjectAction
+  Targets:
+  - GameObject: {fileID: 667263115}
+    State: 0
+--- !u!114 &667263120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667263115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67b9c6de4d14ca04297d8e1b9884a16e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: NextFrameLogic
+  OnComplete:
+  - {fileID: 667263119}
 --- !u!43 &673152959
 Mesh:
   m_ObjectHideFlags: 0
