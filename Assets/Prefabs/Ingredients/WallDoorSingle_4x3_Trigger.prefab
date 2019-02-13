@@ -77,6 +77,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallDoorSingle_4x3_Trigger
       objectReference: {fileID: 0}
+    - target: {fileID: 6344269940498746802, guid: 26153be303e072e4496539fba445aa27,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6344269940498746761, guid: 26153be303e072e4496539fba445aa27,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -132,6 +137,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2580815093705152511, guid: 26153be303e072e4496539fba445aa27,
+        type: 3}
+      propertyPath: StateMachine
+      value: 
+      objectReference: {fileID: 3636214023431377492}
+    - target: {fileID: 63904195678489143, guid: 26153be303e072e4496539fba445aa27,
+        type: 3}
+      propertyPath: States.Array.data[0]
+      value: 
+      objectReference: {fileID: 1258200632083711849}
+    - target: {fileID: 63904195678489143, guid: 26153be303e072e4496539fba445aa27,
+        type: 3}
+      propertyPath: States.Array.data[1]
+      value: 
+      objectReference: {fileID: 8848211187578498467}
+    - target: {fileID: 8313757419151405488, guid: 26153be303e072e4496539fba445aa27,
+        type: 3}
+      propertyPath: StateMachine
+      value: 
+      objectReference: {fileID: 3636214023431377492}
     - target: {fileID: 6344269940498746806, guid: 26153be303e072e4496539fba445aa27,
         type: 3}
       propertyPath: m_Mesh
@@ -142,12 +167,27 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 6534764845480435138, guid: 26153be303e072e4496539fba445aa27,
+    - target: {fileID: 3714400407371386592, guid: 26153be303e072e4496539fba445aa27,
         type: 3}
       propertyPath: StateMachine
       value: 
-      objectReference: {fileID: 3606083204330657329}
-    - target: {fileID: 3714400407371386592, guid: 26153be303e072e4496539fba445aa27,
+      objectReference: {fileID: 2968912960253811690}
+    - target: {fileID: 2586019649682185994, guid: 26153be303e072e4496539fba445aa27,
+        type: 3}
+      propertyPath: OnStateEnter.Array.data[0]
+      value: 
+      objectReference: {fileID: 7504479007382652321}
+    - target: {fileID: 2586019649682185994, guid: 26153be303e072e4496539fba445aa27,
+        type: 3}
+      propertyPath: OnStateEnter.Array.data[1]
+      value: 
+      objectReference: {fileID: 79189684257363587}
+    - target: {fileID: 2586019649682185994, guid: 26153be303e072e4496539fba445aa27,
+        type: 3}
+      propertyPath: OnStateEnter.Array.data[2]
+      value: 
+      objectReference: {fileID: 4880475350411796926}
+    - target: {fileID: 2554745308055750971, guid: 26153be303e072e4496539fba445aa27,
         type: 3}
       propertyPath: StateMachine
       value: 
@@ -182,16 +222,51 @@ PrefabInstance:
       propertyPath: States.Array.data[2]
       value: 
       objectReference: {fileID: 8408681452093657205}
+    - target: {fileID: 770500823201765768, guid: 26153be303e072e4496539fba445aa27,
+        type: 3}
+      propertyPath: States.Array.data[0]
+      value: 
+      objectReference: {fileID: 6301369048729019108}
+    - target: {fileID: 770500823201765768, guid: 26153be303e072e4496539fba445aa27,
+        type: 3}
+      propertyPath: States.Array.data[1]
+      value: 
+      objectReference: {fileID: 8473204749204076932}
+    - target: {fileID: 8155890959412984285, guid: 26153be303e072e4496539fba445aa27,
+        type: 3}
+      propertyPath: StateMachine
+      value: 
+      objectReference: {fileID: 4045423846641058283}
+    - target: {fileID: 6109598297541624797, guid: 26153be303e072e4496539fba445aa27,
+        type: 3}
+      propertyPath: StateMachine
+      value: 
+      objectReference: {fileID: 4045423846641058283}
+    - target: {fileID: 6534764845480435138, guid: 26153be303e072e4496539fba445aa27,
+        type: 3}
+      propertyPath: StateMachine
+      value: 
+      objectReference: {fileID: 3606083204330657329}
     - target: {fileID: 6501241647098531748, guid: 26153be303e072e4496539fba445aa27,
         type: 3}
       propertyPath: StateMachine
       value: 
       objectReference: {fileID: 3606083204330657329}
-    - target: {fileID: 2554745308055750971, guid: 26153be303e072e4496539fba445aa27,
+    - target: {fileID: 5214689898262033856, guid: 26153be303e072e4496539fba445aa27,
         type: 3}
-      propertyPath: StateMachine
+      propertyPath: OnStateEnter.Array.data[0]
       value: 
-      objectReference: {fileID: 2968912960253811690}
+      objectReference: {fileID: 7542519138144589767}
+    - target: {fileID: 5214689898262033856, guid: 26153be303e072e4496539fba445aa27,
+        type: 3}
+      propertyPath: OnStateEnter.Array.data[1]
+      value: 
+      objectReference: {fileID: 1288349137657090392}
+    - target: {fileID: 5214689898262033856, guid: 26153be303e072e4496539fba445aa27,
+        type: 3}
+      propertyPath: OnStateEnter.Array.data[2]
+      value: 
+      objectReference: {fileID: 7375984336395688894}
     - target: {fileID: 3259871190548748787, guid: 26153be303e072e4496539fba445aa27,
         type: 3}
       propertyPath: m_Target
@@ -227,76 +302,6 @@ PrefabInstance:
       propertyPath: OnStateEnter.Array.data[0]
       value: 
       objectReference: {fileID: 2820808318315118797}
-    - target: {fileID: 770500823201765768, guid: 26153be303e072e4496539fba445aa27,
-        type: 3}
-      propertyPath: States.Array.data[0]
-      value: 
-      objectReference: {fileID: 6301369048729019108}
-    - target: {fileID: 770500823201765768, guid: 26153be303e072e4496539fba445aa27,
-        type: 3}
-      propertyPath: States.Array.data[1]
-      value: 
-      objectReference: {fileID: 8473204749204076932}
-    - target: {fileID: 2586019649682185994, guid: 26153be303e072e4496539fba445aa27,
-        type: 3}
-      propertyPath: OnStateEnter.Array.data[0]
-      value: 
-      objectReference: {fileID: 7504479007382652321}
-    - target: {fileID: 2586019649682185994, guid: 26153be303e072e4496539fba445aa27,
-        type: 3}
-      propertyPath: OnStateEnter.Array.data[1]
-      value: 
-      objectReference: {fileID: 79189684257363587}
-    - target: {fileID: 2586019649682185994, guid: 26153be303e072e4496539fba445aa27,
-        type: 3}
-      propertyPath: OnStateEnter.Array.data[2]
-      value: 
-      objectReference: {fileID: 4880475350411796926}
-    - target: {fileID: 5214689898262033856, guid: 26153be303e072e4496539fba445aa27,
-        type: 3}
-      propertyPath: OnStateEnter.Array.data[0]
-      value: 
-      objectReference: {fileID: 7542519138144589767}
-    - target: {fileID: 5214689898262033856, guid: 26153be303e072e4496539fba445aa27,
-        type: 3}
-      propertyPath: OnStateEnter.Array.data[1]
-      value: 
-      objectReference: {fileID: 1288349137657090392}
-    - target: {fileID: 5214689898262033856, guid: 26153be303e072e4496539fba445aa27,
-        type: 3}
-      propertyPath: OnStateEnter.Array.data[2]
-      value: 
-      objectReference: {fileID: 7375984336395688894}
-    - target: {fileID: 8155890959412984285, guid: 26153be303e072e4496539fba445aa27,
-        type: 3}
-      propertyPath: StateMachine
-      value: 
-      objectReference: {fileID: 4045423846641058283}
-    - target: {fileID: 6109598297541624797, guid: 26153be303e072e4496539fba445aa27,
-        type: 3}
-      propertyPath: StateMachine
-      value: 
-      objectReference: {fileID: 4045423846641058283}
-    - target: {fileID: 63904195678489143, guid: 26153be303e072e4496539fba445aa27,
-        type: 3}
-      propertyPath: States.Array.data[0]
-      value: 
-      objectReference: {fileID: 1258200632083711849}
-    - target: {fileID: 63904195678489143, guid: 26153be303e072e4496539fba445aa27,
-        type: 3}
-      propertyPath: States.Array.data[1]
-      value: 
-      objectReference: {fileID: 8848211187578498467}
-    - target: {fileID: 2580815093705152511, guid: 26153be303e072e4496539fba445aa27,
-        type: 3}
-      propertyPath: StateMachine
-      value: 
-      objectReference: {fileID: 3636214023431377492}
-    - target: {fileID: 8313757419151405488, guid: 26153be303e072e4496539fba445aa27,
-        type: 3}
-      propertyPath: StateMachine
-      value: 
-      objectReference: {fileID: 3636214023431377492}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26153be303e072e4496539fba445aa27, type: 3}
 --- !u!114 &2281080319648530832 stripped

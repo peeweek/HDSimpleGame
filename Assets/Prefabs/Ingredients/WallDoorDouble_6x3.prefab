@@ -21,7 +21,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 9
   m_IsActive: 1
 --- !u!4 &145096661706828629
 Transform:
@@ -1123,36 +1123,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8446004628740290312, guid: 7bc41f64442d880498c21f3a40fc98ef,
-        type: 3}
-      propertyPath: onTriggerEnter.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446004628740290312, guid: 7bc41f64442d880498c21f3a40fc98ef,
-        type: 3}
-      propertyPath: onTriggerExit.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446004628740290312, guid: 7bc41f64442d880498c21f3a40fc98ef,
-        type: 3}
-      propertyPath: onTriggerEnter.Array.data[0]
-      value: 
-      objectReference: {fileID: 8589843140967721282}
-    - target: {fileID: 8446004628740290312, guid: 7bc41f64442d880498c21f3a40fc98ef,
-        type: 3}
-      propertyPath: onTriggerExit.Array.data[0]
-      value: 
-      objectReference: {fileID: 5744553102305167598}
-    - target: {fileID: 8446004628740290312, guid: 7bc41f64442d880498c21f3a40fc98ef,
-        type: 3}
-      propertyPath: onTriggerEnter.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8446004628740290312, guid: 7bc41f64442d880498c21f3a40fc98ef,
-        type: 3}
-      propertyPath: onTriggerExit.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8446004629653397371, guid: 7bc41f64442d880498c21f3a40fc98ef,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1238,6 +1208,36 @@ PrefabInstance:
       propertyPath: OnExecute.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 8589843141077190637}
+    - target: {fileID: 8446004628740290312, guid: 7bc41f64442d880498c21f3a40fc98ef,
+        type: 3}
+      propertyPath: onTriggerEnter.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8446004628740290312, guid: 7bc41f64442d880498c21f3a40fc98ef,
+        type: 3}
+      propertyPath: onTriggerExit.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8446004628740290312, guid: 7bc41f64442d880498c21f3a40fc98ef,
+        type: 3}
+      propertyPath: onTriggerEnter.Array.data[0]
+      value: 
+      objectReference: {fileID: 8589843140967721282}
+    - target: {fileID: 8446004628740290312, guid: 7bc41f64442d880498c21f3a40fc98ef,
+        type: 3}
+      propertyPath: onTriggerExit.Array.data[0]
+      value: 
+      objectReference: {fileID: 5744553102305167598}
+    - target: {fileID: 8446004628740290312, guid: 7bc41f64442d880498c21f3a40fc98ef,
+        type: 3}
+      propertyPath: onTriggerEnter.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8446004628740290312, guid: 7bc41f64442d880498c21f3a40fc98ef,
+        type: 3}
+      propertyPath: onTriggerExit.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bc41f64442d880498c21f3a40fc98ef, type: 3}
 --- !u!114 &5744553102305167598 stripped
