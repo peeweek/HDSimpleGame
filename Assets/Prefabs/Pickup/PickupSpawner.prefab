@@ -118,7 +118,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4755728839140164210}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0.00000028088027}
   m_LocalPosition: {x: 2.09, y: 0.1, z: -13.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -126,7 +126,7 @@ Transform:
   - {fileID: 4755728839896820598}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -179.99998, z: 0}
 --- !u!114 &4755728839140164209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,12 +167,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d69cd00f40343984eaf286a54b36348c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FactoryBlueprints:
-  - {fileID: 8961883786408098331, guid: 72628ea45a3de9b46ae947f44b545ea9, type: 3}
+  FactoryBlueprints: []
   SpawnTarget: {fileID: 4755728839896820593}
   blueprintSelecionMode: 0
   RespawnTarget: 1
-  RespawnDelay: 3
+  RespawnDelay: 12
   MaxInstances: 1
   OnSpawn: []
   OnRespawn: []
@@ -186,7 +185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4755728839896820598}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: SpawnTarget
   m_TagString: Untagged
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0

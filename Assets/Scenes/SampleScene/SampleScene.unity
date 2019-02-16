@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 0
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
@@ -35,10 +35,10 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 1
+  m_ReflectionIntensity: 0
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.06744362, g: 0.0889105, b: 0.13196887, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6559,6 +6559,7 @@ MonoBehaviour:
   Prefabs:
   - {fileID: 3354862971841549540, guid: 5581b5fae7896344f98610b7b526c74a, type: 3}
   TargetTransform: {fileID: 589859653}
+  TargetInstigator: 0
   AttachToTarget: 0
   DontDestroyPrefabsOnLoad: 0
 --- !u!114 &1261806439
@@ -11449,9 +11450,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4755728839140164211, guid: 4d142971e52107a43800c50e43ee272d,
         type: 3}
-      propertyPath: RespawnDelay
-      value: 12
+      propertyPath: FactoryBlueprints.Array.size
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4755728839140164211, guid: 4d142971e52107a43800c50e43ee272d,
+        type: 3}
+      propertyPath: FactoryBlueprints.Array.data[0]
+      value: 
+      objectReference: {fileID: 8961883786408098331, guid: 72628ea45a3de9b46ae947f44b545ea9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d142971e52107a43800c50e43ee272d, type: 3}
 --- !u!1001 &5324786387826606242
