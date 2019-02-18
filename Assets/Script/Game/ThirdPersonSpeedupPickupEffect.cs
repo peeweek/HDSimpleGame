@@ -4,7 +4,7 @@ using UnityEngine;
 using ThirdPersonController;
 using GameplayIngredients.Pickup;
 
-public class ThirdPersonPickupEffect : PickupEffectBase
+public class ThirdPersonSpeedupPickupEffect : PickupEffectBase
 {
     public float Duration = 3.0f;
     public float SpeedMultiplier = 2.0f;

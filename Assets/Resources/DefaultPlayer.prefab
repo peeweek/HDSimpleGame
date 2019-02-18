@@ -1299,7 +1299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 8564695338435537783}
-  CameraRigPrefab: {fileID: 6541897821426417865, guid: 23eca59209677e14bb0beda68a55f43f,
+  CameraRigPrefab: {fileID: 6541897821426417865, guid: aada040a467dba34bbed67226b4cf8e4,
     type: 3}
   CameraFollowTarget: {fileID: 3354862971841549540}
   CameraLookAtTarget: {fileID: 8878277720566958892}
@@ -1348,6 +1348,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d9cf7efdfbcdc243b0dd4dcb6232742, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedEffectVFX: {fileID: 8926484042661614526, guid: bbec5e3dc9b2e9e4b975ad9bc6c7dc7a,
+    type: 3}
 --- !u!136 &3924666870033319386
 CapsuleCollider:
   m_ObjectHideFlags: 0
