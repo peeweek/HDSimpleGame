@@ -635,6 +635,7 @@ GameObject:
   - component: {fileID: 634347498}
   - component: {fileID: 634347501}
   - component: {fileID: 634347502}
+  - component: {fileID: 634347503}
   m_Layer: 0
   m_Name: OnStart
   m_TagString: Untagged
@@ -674,6 +675,7 @@ MonoBehaviour:
   OnMessageRecieved:
   - {fileID: 634347498}
   - {fileID: 634347501}
+  - {fileID: 634347503}
   - {fileID: 634347502}
 --- !u!4 &634347500
 Transform:
@@ -720,6 +722,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: FocusUIAction
   UIObjectToFocus: {fileID: 2028965619}
+--- !u!114 &634347503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634347497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a441d07e5dca4794e8f2896c98a158a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: CursorAction
+  LockState: 0
+  CursorVisible: 1
 --- !u!1 &640263372
 GameObject:
   m_ObjectHideFlags: 0

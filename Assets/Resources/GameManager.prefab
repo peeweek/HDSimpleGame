@@ -598,6 +598,8 @@ GameObject:
   - component: {fileID: 1708839750979895877}
   - component: {fileID: 3623791910937151571}
   - component: {fileID: 4093360877301288597}
+  - component: {fileID: 2029191033698994329}
+  - component: {fileID: 8182704612558430923}
   m_Layer: 0
   m_Name: PauseRoot
   m_TagString: Untagged
@@ -635,8 +637,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnEnableEvent:
   - {fileID: 3623791910937151571}
+  - {fileID: 2029191033698994329}
   OnDisableEvent:
   - {fileID: 4093360877301288597}
+  - {fileID: 8182704612558430923}
 --- !u!114 &3623791910937151571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,6 +669,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: UnPause
   TimeScale: 1
+--- !u!114 &2029191033698994329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5209807687994477797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a441d07e5dca4794e8f2896c98a158a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: ShowCursor
+  LockState: 0
+  CursorVisible: 1
+--- !u!114 &8182704612558430923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5209807687994477797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a441d07e5dca4794e8f2896c98a158a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: HideCursor
+  LockState: 1
+  CursorVisible: 0
 --- !u!1 &5621195580044590203
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,9 +918,6 @@ GameObject:
   - component: {fileID: 4931830584097669066}
   - component: {fileID: 4377808368045108145}
   - component: {fileID: 7936329347477506756}
-  - component: {fileID: 4901228719768127100}
-  - component: {fileID: 1245086065403290849}
-  - component: {fileID: 1673182479039857413}
   m_Layer: 0
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -956,52 +987,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: FocusUIAction
   UIObjectToFocus: {fileID: 6628799341439697346}
---- !u!114 &4901228719768127100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6250001660253533342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19e53b416fec4b341a147adedee96946, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnEnableEvent:
-  - {fileID: 1245086065403290849}
-  OnDisableEvent:
-  - {fileID: 1673182479039857413}
---- !u!114 &1245086065403290849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6250001660253533342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a441d07e5dca4794e8f2896c98a158a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: ShowCursor
-  LockState: 0
-  CursorVisible: 1
---- !u!114 &1673182479039857413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6250001660253533342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a441d07e5dca4794e8f2896c98a158a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: HideCursor
-  LockState: 1
-  CursorVisible: 0
 --- !u!1 &6529382763251250118
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,6 +1049,7 @@ GameObject:
   - component: {fileID: 8052972340189759147}
   - component: {fileID: 4627195016065618310}
   - component: {fileID: 509186331139906514}
+  - component: {fileID: 5408483858275289813}
   m_Layer: 0
   m_Name: On MENU_START_GAME - Streaming
   m_TagString: Untagged
@@ -1100,6 +1086,7 @@ MonoBehaviour:
   MessageName: MENU_START_GAME
   OnMessageRecieved:
   - {fileID: 1428516531338884293}
+  - {fileID: 5408483858275289813}
 --- !u!114 &1428516531338884293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1171,6 +1158,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: GAME_START
   MessageToSend: GAME_START
+--- !u!114 &5408483858275289813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6874627137262727619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a441d07e5dca4794e8f2896c98a158a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: CursorAction
+  LockState: 1
+  CursorVisible: 0
 --- !u!1 &6887719395551333737
 GameObject:
   m_ObjectHideFlags: 0
