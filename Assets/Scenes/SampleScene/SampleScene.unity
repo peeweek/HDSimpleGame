@@ -622,7 +622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c68adda9532fd8043b281736d2a5fbcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: SendMessageAction
+  Name: Send Game Start
   MessageToSend: GAME_START
 --- !u!114 &106901553
 MonoBehaviour:
@@ -636,7 +636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5b32278809154e47b5d8375352f6f8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: EditorOnlyLogic
+  Name: Editor Check
   DisableOnPlayFromHere: 0
   ExecutionPath: 1
   OnExecute:
@@ -4242,7 +4242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846d5f33f7af4014ea15adf7a92dc953, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: ToggleGameObjectAction
+  Name: DisableSelf
   Targets:
   - GameObject: {fileID: 667263115}
     State: 0
@@ -9346,6 +9346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1261806437}
   - component: {fileID: 1261806439}
+  - component: {fileID: 1261806440}
   - component: {fileID: 1261806438}
   m_Layer: 0
   m_Name: AIRobotSpawner
@@ -9381,16 +9382,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1261806436}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2875c0d65452a845831d16b89e97547, type: 3}
+  m_Script: {fileID: 11500000, guid: d69cd00f40343984eaf286a54b36348c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: SpawnPrefabAction
-  Prefabs:
+  FactoryBlueprints:
   - {fileID: 3354862971841549540, guid: 5581b5fae7896344f98610b7b526c74a, type: 3}
-  TargetTransform: {fileID: 589859653}
-  TargetInstigator: 0
-  AttachToTarget: 0
-  DontDestroyPrefabsOnLoad: 0
+  SpawnTarget: {fileID: 589859652}
+  blueprintSelecionMode: 0
+  RespawnTarget: 1
+  spawnLocation: 1
+  RespawnDelay: 3
+  ReapInstancesOnDestroy: 1
+  MaxInstances: 1
+  OnSpawn: []
+  OnRespawn: []
 --- !u!114 &1261806439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9405,7 +9410,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MessageName: GAME_START
   OnMessageRecieved:
-  - {fileID: 1261806438}
+  - {fileID: 1261806440}
+--- !u!114 &1261806440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261806436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc5c180f8bf863b4da50cd3ac688bda3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Spawn AI Player
+  factory: {fileID: 1261806438}
 --- !u!4 &1264318005 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3347796525254018108, guid: 2440df5ab685ea04db8904f2398473ef,
@@ -15712,7 +15731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d6566ceaa073c944b7d03f43819b2a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: FullScreenFadeAction
+  Name: Fade Immediate
   Fading: 1
   Duration: 0
   OnComplete:
