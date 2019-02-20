@@ -103,7 +103,8 @@ GameObject:
   - component: {fileID: 2317791065025754744}
   - component: {fileID: 8228121315134160705}
   - component: {fileID: 2317791065025754745}
-  - component: {fileID: 2317791065025754751}
+  - component: {fileID: 600669375431565052}
+  - component: {fileID: 3536433921149200747}
   m_Layer: 0
   m_Name: PlayerStart
   m_TagString: Untagged
@@ -158,8 +159,8 @@ MonoBehaviour:
   DisableOnPlayFromHere: 1
   ExecutionPath: 0
   OnExecute:
-  - {fileID: 2317791065025754751}
---- !u!114 &2317791065025754751
+  - {fileID: 600669375431565052}
+--- !u!114 &600669375431565052
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,15 +169,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 2317791065025754747}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2875c0d65452a845831d16b89e97547, type: 3}
+  m_Script: {fileID: 11500000, guid: bc5c180f8bf863b4da50cd3ac688bda3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: SpawnPrefabAction
-  Prefabs:
+  Name: SpawnPlayer
+  factory: {fileID: 3536433921149200747}
+--- !u!114 &3536433921149200747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2317791065025754747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69cd00f40343984eaf286a54b36348c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FactoryBlueprints:
   - {fileID: 3354862971841549540, guid: 1b6e6f5571c84694c9c526a74c9e8a8e, type: 3}
-  TargetTransform: {fileID: 2317791066096484691}
-  AttachToTarget: 0
-  DontDestroyPrefabsOnLoad: 0
+  SpawnTarget: {fileID: 2317791066096484690}
+  blueprintSelecionMode: 0
+  RespawnTarget: 1
+  spawnLocation: 1
+  RespawnDelay: 3
+  ReapInstancesOnDestroy: 1
+  MaxInstances: 1
+  OnSpawn: []
+  OnRespawn: []
 --- !u!1 &2317791066096484690
 GameObject:
   m_ObjectHideFlags: 0
