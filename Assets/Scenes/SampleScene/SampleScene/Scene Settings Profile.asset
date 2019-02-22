@@ -178,11 +178,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   colorMode:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 0
   color:
-    m_OverrideState: 0
-    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    m_OverrideState: 1
+    m_Value: {r: 0.42172483, g: 0.5823246, b: 0.764151, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
@@ -192,21 +192,21 @@ MonoBehaviour:
     min: 0
     max: 1
   maxFogDistance:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 5000
     min: 0
   mipFogMaxMip:
-    m_OverrideState: 0
-    m_Value: 0.5
+    m_OverrideState: 1
+    m_Value: 0.199
     min: 0
     max: 1
   mipFogNear:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 128
     min: 0
   mipFogFar:
-    m_OverrideState: 0
-    m_Value: 1000
+    m_OverrideState: 1
+    m_Value: 2000
     min: 0
   albedo:
     m_OverrideState: 0
@@ -220,21 +220,21 @@ MonoBehaviour:
     min: 1
   baseHeight:
     m_OverrideState: 1
-    m_Value: 32
+    m_Value: 12
   meanHeight:
     m_OverrideState: 1
-    m_Value: 32
+    m_Value: 17.1
     min: 1
   anisotropy:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.8
     min: -1
     max: 1
   globalLightProbeDimmer:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
     min: 0
     max: 1
   enableDistantFog:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1
