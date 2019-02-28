@@ -1,5 +1,50 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1741729027749883184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8927561016709238841}
+  - component: {fileID: 5110950760989537472}
+  m_Layer: 0
+  m_Name: On Level Start
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8927561016709238841
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741729027749883184}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7679178975215622487}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5110950760989537472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741729027749883184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c68adda9532fd8043b281736d2a5fbcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Send GAME_START
+  MessageToSend: GAME_START
 --- !u!1 &2391957315306162015
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,7 +151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2852898792376029658}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.301818, y: -0.9879924, z: -1.8137374}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7679178975215622487}
@@ -169,7 +214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4451373349563513221}
   - component: {fileID: 7234447958495616426}
-  - component: {fileID: 2793790265577738173}
+  - component: {fileID: 4659997983612386573}
   - component: {fileID: 1151459572194677049}
   m_Layer: 0
   m_Name: On BOOT_COMPLETE
@@ -206,8 +251,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MessageName: BOOT_COMPLETE
   OnMessageRecieved:
-  - {fileID: 2793790265577738173}
---- !u!114 &2793790265577738173
+  - {fileID: 4659997983612386573}
+--- !u!114 &4659997983612386573
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -216,16 +261,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 2898751834708994570}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39abcbaec080eaa4cb915feb031bb7e8, type: 3}
+  m_Script: {fileID: 11500000, guid: 3aabe1ebc59bfa94499c44333106efec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: StreamingLevelAction
-  Scenes:
-  - MainMenu
-  SceneToActivate: MainMenu
-  Action: 0
+  Name: Load MainMenu
   ShowUI: 0
-  OnLoadComplete:
+  change: 0
+  level: 0
+  specifiedLevel: {fileID: 0}
+  UserSaveIndex: 0
+  UserSaveName: Progress
+  OnComplete:
   - {fileID: 1151459572194677049}
 --- !u!114 &1151459572194677049
 MonoBehaviour:
@@ -239,7 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c68adda9532fd8043b281736d2a5fbcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: SendMessageAction
+  Name: Send MAINMENU_START
   MessageToSend: MAINMENU_START
 --- !u!1 &4185931755669616141
 GameObject:
@@ -397,7 +443,7 @@ GameObject:
   - component: {fileID: 6640644802901092448}
   - component: {fileID: 3332227830817726040}
   m_Layer: 0
-  m_Name: GameBoot
+  m_Name: GAME BOOT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -476,8 +522,8 @@ GameObject:
   - component: {fileID: 4859442874873441467}
   - component: {fileID: 1366847399300087476}
   - component: {fileID: 282652844847516721}
-  - component: {fileID: 1867501285389445137}
-  - component: {fileID: 3408522065749889886}
+  - component: {fileID: 8676058086932506538}
+  - component: {fileID: 3410292243518967409}
   - component: {fileID: 3902545109351497581}
   m_Layer: 0
   m_Name: On RETURN_TO_MAINMENU - Streaming
@@ -494,7 +540,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4616524248671979901}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.301818, y: -0.9879924, z: -1.8137374}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7679178975215622487}
@@ -531,8 +577,8 @@ MonoBehaviour:
   Fading: 1
   Duration: 2
   OnComplete:
-  - {fileID: 1867501285389445137}
---- !u!114 &1867501285389445137
+  - {fileID: 8676058086932506538}
+--- !u!114 &8676058086932506538
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -541,36 +587,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 4616524248671979901}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39abcbaec080eaa4cb915feb031bb7e8, type: 3}
+  m_Script: {fileID: 11500000, guid: 3aabe1ebc59bfa94499c44333106efec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Unload SampleScene
-  Scenes:
-  - SampleScene
-  SceneToActivate: 
-  Action: 1
-  ShowUI: 0
-  OnLoadComplete:
-  - {fileID: 3408522065749889886}
---- !u!114 &3408522065749889886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4616524248671979901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39abcbaec080eaa4cb915feb031bb7e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Load MainMenu
-  Scenes:
-  - MainMenu
-  SceneToActivate: MainMenu
-  Action: 0
+  Name: Unload Current
   ShowUI: 1
-  OnLoadComplete:
+  change: 1
+  level: 3
+  specifiedLevel: {fileID: 0}
+  UserSaveIndex: 0
+  UserSaveName: Progress
+  OnComplete:
+  - {fileID: 3410292243518967409}
+--- !u!114 &3410292243518967409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4616524248671979901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aabe1ebc59bfa94499c44333106efec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Load Main Menu
+  ShowUI: 1
+  change: 0
+  level: 0
+  specifiedLevel: {fileID: 0}
+  UserSaveIndex: 0
+  UserSaveName: Progress
+  OnComplete:
   - {fileID: 3902545109351497581}
 --- !u!114 &3902545109351497581
 MonoBehaviour:
@@ -879,7 +927,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6138268846344736833}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.645826, y: 2.3322086, z: -6.4372487}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6250001660253533341}
@@ -889,6 +937,7 @@ Transform:
   - {fileID: 4859442874873441467}
   - {fileID: 6971537568633566062}
   - {fileID: 1214489575276298033}
+  - {fileID: 8927561016709238841}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -906,6 +955,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnGameStart:
   - {fileID: 1245902130417119883}
+  OnLevelLoaded:
+  - {fileID: 5110950760989537472}
+  OnMainMenuLoaded: []
+  MainMenuGameLevel: {fileID: 11400000, guid: 15db22073ebdcae4783c6695fffb15d9, type: 2}
+  MainGameLevels:
+  - {fileID: 11400000, guid: d59b14316b2628848a139594cf5d9404, type: 2}
+  - {fileID: 11400000, guid: 3f500a5624a8ad8428de5b851be32345, type: 2}
+  - {fileID: 11400000, guid: 4aaf95ca759f83242b08c6180a527670, type: 2}
 --- !u!1 &6250001660253533342
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,7 +990,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6250001660253533342}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.645826, y: -0.33220863, z: 6.4372487}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5588010805214969831}
@@ -1045,11 +1102,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7358452557112002238}
   - component: {fileID: 5231563255206666217}
-  - component: {fileID: 1428516531338884293}
-  - component: {fileID: 8052972340189759147}
-  - component: {fileID: 4627195016065618310}
-  - component: {fileID: 509186331139906514}
   - component: {fileID: 5408483858275289813}
+  - component: {fileID: 1428516531338884293}
+  - component: {fileID: 567105059805123643}
+  - component: {fileID: 8810084786041925183}
+  - component: {fileID: 509186331139906514}
   m_Layer: 0
   m_Name: On MENU_START_GAME - Streaming
   m_TagString: Untagged
@@ -1065,7 +1122,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6874627137262727619}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.301818, y: -0.9879924, z: -1.8137374}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7679178975215622487}
@@ -1087,6 +1144,21 @@ MonoBehaviour:
   OnMessageRecieved:
   - {fileID: 1428516531338884293}
   - {fileID: 5408483858275289813}
+--- !u!114 &5408483858275289813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6874627137262727619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a441d07e5dca4794e8f2896c98a158a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Hide Cursor
+  LockState: 1
+  CursorVisible: 0
 --- !u!114 &1428516531338884293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1099,12 +1171,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d6566ceaa073c944b7d03f43819b2a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: FullScreenFadeAction
+  Name: Fade to Black
   Fading: 1
   Duration: 1
   OnComplete:
-  - {fileID: 8052972340189759147}
---- !u!114 &8052972340189759147
+  - {fileID: 567105059805123643}
+--- !u!114 &567105059805123643
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1113,18 +1185,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 6874627137262727619}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39abcbaec080eaa4cb915feb031bb7e8, type: 3}
+  m_Script: {fileID: 11500000, guid: 3aabe1ebc59bfa94499c44333106efec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Unload Main Menu
-  Scenes:
-  - MainMenu
-  SceneToActivate: 
-  Action: 1
+  Name: Unload MainMenu
   ShowUI: 0
-  OnLoadComplete:
-  - {fileID: 4627195016065618310}
---- !u!114 &4627195016065618310
+  change: 1
+  level: 0
+  specifiedLevel: {fileID: 0}
+  UserSaveIndex: 0
+  UserSaveName: Progress
+  OnComplete:
+  - {fileID: 8810084786041925183}
+--- !u!114 &8810084786041925183
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1133,16 +1206,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 6874627137262727619}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39abcbaec080eaa4cb915feb031bb7e8, type: 3}
+  m_Script: {fileID: 11500000, guid: 3aabe1ebc59bfa94499c44333106efec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Load SampleScene
-  Scenes:
-  - SampleScene
-  SceneToActivate: SampleScene
-  Action: 0
+  Name: Load First
   ShowUI: 1
-  OnLoadComplete:
+  change: 0
+  level: 1
+  specifiedLevel: {fileID: 0}
+  UserSaveIndex: 0
+  UserSaveName: Progress
+  OnComplete:
   - {fileID: 509186331139906514}
 --- !u!114 &509186331139906514
 MonoBehaviour:
@@ -1156,23 +1230,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c68adda9532fd8043b281736d2a5fbcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: GAME_START
+  Name: Send GAME_START
   MessageToSend: GAME_START
---- !u!114 &5408483858275289813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6874627137262727619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a441d07e5dca4794e8f2896c98a158a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: CursorAction
-  LockState: 1
-  CursorVisible: 0
 --- !u!1 &6887719395551333737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,7 +1512,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8977565413594992333}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.301818, y: -0.9879924, z: -1.8137374}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7679178975215622487}
