@@ -22,6 +22,10 @@ public class GameManager : Manager
     public GameLevel[] MainGameLevels;
 
     public int currentLevel { get { return m_CurrentLevel; } }
+    public int currentSaveProgress {
+        get { return Manager.Get<GameSaveManager>().GetInt("Game.Progress", GameSaveManager.Location.User);  }
+        set { Manager.Get<GameSaveManager>().SetInt("Game.Progress", GameSaveManager.Location.User, value);  }
+    }
 
     // Not Serialized
     int m_CurrentLevel = -2;
@@ -30,6 +34,7 @@ public class GameManager : Manager
     {
         m_CurrentLevel = int.MinValue;
         Callable.Call(OnGameStart);
+        Manager.Get<GameSaveManager>().LoadUserSave(0);
     }
 
     public void LoadMainMenu(bool showUI = false, Callable[] onComplete = null)
