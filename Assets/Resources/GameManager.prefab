@@ -300,7 +300,6 @@ GameObject:
   - component: {fileID: 7047417205033866112}
   - component: {fileID: 78555729428002019}
   - component: {fileID: 8627539300517219234}
-  - component: {fileID: 4775489223142361058}
   - component: {fileID: 2869113334958419182}
   m_Layer: 0
   m_Name: On NEXT_LEVEL
@@ -368,7 +367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Unload Current
-  ShowUI: 1
+  ShowUI: 0
   change: 1
   level: 3
   specifiedLevel: {fileID: 0}
@@ -395,23 +394,6 @@ MonoBehaviour:
   specifiedLevel: {fileID: 0}
   UserSaveIndex: 0
   UserSaveName: Progress
-  OnComplete:
-  - {fileID: 4775489223142361058}
---- !u!114 &4775489223142361058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3521874450063626470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d6566ceaa073c944b7d03f43819b2a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fade Out
-  Fading: 0
-  Duration: 1
   OnComplete:
   - {fileID: 2869113334958419182}
 --- !u!114 &2869113334958419182
@@ -1104,6 +1086,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3f500a5624a8ad8428de5b851be32345, type: 2}
   - {fileID: 11400000, guid: 4aaf95ca759f83242b08c6180a527670, type: 2}
   - {fileID: 11400000, guid: d59b14316b2628848a139594cf5d9404, type: 2}
+  - {fileID: 11400000, guid: a2a8ff911707bbf40ab5ea7ae178b2a7, type: 2}
 --- !u!1 &6250001660253533342
 GameObject:
   m_ObjectHideFlags: 0
