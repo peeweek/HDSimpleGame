@@ -53,7 +53,7 @@ public class GameLevelLoadAction : ActionBase
             case Target.Last: index = manager.MainGameLevels.Length - 1; break;
             case Target.Current: index = manager.currentLevel; break;
             case Target.Previous: index = Mathf.Max(0, manager.currentLevel-1); break;
-            case Target.Next: index = Mathf.Max(manager.MainGameLevels.Length - 1, manager.currentLevel + 1); break;
+            case Target.Next: index = Mathf.Min(manager.MainGameLevels.Length - 1, manager.currentLevel + 1); break;
             case Target.Specified:
                 if(specifiedLevel != null && manager.MainGameLevels.Contains(specifiedLevel))
                 {

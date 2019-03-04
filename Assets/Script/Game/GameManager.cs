@@ -21,6 +21,7 @@ public class GameManager : Manager
     [ReorderableList,NonNullCheck]
     public GameLevel[] MainGameLevels;
 
+    [ShowNativeProperty]
     public int currentLevel { get { return m_CurrentLevel; } }
     public int currentSaveProgress {
         get { return Manager.Get<GameSaveManager>().GetInt("Game.Progress", GameSaveManager.Location.User);  }
