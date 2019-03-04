@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.06744302, g: 0.08890986, b: 0.13196783, a: 1}
+  m_IndirectSpecularColor: {r: 0.06744336, g: 0.08891034, b: 0.13196866, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -475,12 +475,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 8.253
       objectReference: {fileID: 0}
-    - target: {fileID: 3347796525254018111, guid: 2440df5ab685ea04db8904f2398473ef,
+    - target: {fileID: 3347796525254018104, guid: 2440df5ab685ea04db8904f2398473ef,
         type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 400458441}
-    - target: {fileID: 3347796525254018104, guid: 2440df5ab685ea04db8904f2398473ef,
+    - target: {fileID: 3347796525254018111, guid: 2440df5ab685ea04db8904f2398473ef,
         type: 3}
       propertyPath: m_Mesh
       value: 
@@ -493,7 +493,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-20870
+  m_Name: pb_Mesh-177298
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -796,6 +796,7 @@ MonoBehaviour:
   ExitMaxCount: 0
   onTriggerEnter:
   - {fileID: 823138633}
+  - {fileID: 0}
   onTriggerExit: []
   OnlyInteractWithTag: 1
   Tag: Player
