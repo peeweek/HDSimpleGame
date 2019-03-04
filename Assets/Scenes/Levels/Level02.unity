@@ -498,7 +498,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-21252
+  m_Name: pb_Mesh-1158
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -911,7 +911,7 @@ PrefabInstance:
     - target: {fileID: 8549577032381029879, guid: 652bc2d49128d654fb393b8b9bdc3fba,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.6027107
+      value: 15.79
       objectReference: {fileID: 0}
     - target: {fileID: 8549577032381029879, guid: 652bc2d49128d654fb393b8b9bdc3fba,
         type: 3}
@@ -921,27 +921,27 @@ PrefabInstance:
     - target: {fileID: 8549577032381029879, guid: 652bc2d49128d654fb393b8b9bdc3fba,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.010626
+      value: 14.78
       objectReference: {fileID: 0}
     - target: {fileID: 8549577032381029879, guid: 652bc2d49128d654fb393b8b9bdc3fba,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8549577032381029879, guid: 652bc2d49128d654fb393b8b9bdc3fba,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.436233
       objectReference: {fileID: 0}
     - target: {fileID: 8549577032381029879, guid: 652bc2d49128d654fb393b8b9bdc3fba,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8549577032381029879, guid: 652bc2d49128d654fb393b8b9bdc3fba,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.89983374
       objectReference: {fileID: 0}
     - target: {fileID: 8549577032381029879, guid: 652bc2d49128d654fb393b8b9bdc3fba,
         type: 3}
@@ -956,11 +956,36 @@ PrefabInstance:
     - target: {fileID: 8549577032381029879, guid: 652bc2d49128d654fb393b8b9bdc3fba,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 51.728
       objectReference: {fileID: 0}
     - target: {fileID: 8549577032381029879, guid: 652bc2d49128d654fb393b8b9bdc3fba,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854104292153301656, guid: 652bc2d49128d654fb393b8b9bdc3fba,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854104292153301656, guid: 652bc2d49128d654fb393b8b9bdc3fba,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854104292153301656, guid: 652bc2d49128d654fb393b8b9bdc3fba,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4384316063267130924, guid: 652bc2d49128d654fb393b8b9bdc3fba,
+        type: 3}
+      propertyPath: m_VolumetricDimmer
+      value: 0.138
+      objectReference: {fileID: 0}
+    - target: {fileID: 4384316063267130924, guid: 652bc2d49128d654fb393b8b9bdc3fba,
+        type: 3}
+      propertyPath: useVolumetric
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
