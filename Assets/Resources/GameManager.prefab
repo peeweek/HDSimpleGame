@@ -297,10 +297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2347812634749720423}
   - component: {fileID: 1884124081315244603}
-  - component: {fileID: 7047417205033866112}
-  - component: {fileID: 78555729428002019}
   - component: {fileID: 8627539300517219234}
-  - component: {fileID: 2869113334958419182}
   m_Layer: 0
   m_Name: On NEXT_LEVEL
   m_TagString: Untagged
@@ -336,44 +333,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MessageName: NEXT_LEVEL
   OnMessageRecieved:
-  - {fileID: 7047417205033866112}
---- !u!114 &7047417205033866112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3521874450063626470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d6566ceaa073c944b7d03f43819b2a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fade to Black
-  Fading: 1
-  Duration: 1
-  OnComplete:
-  - {fileID: 78555729428002019}
---- !u!114 &78555729428002019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3521874450063626470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aabe1ebc59bfa94499c44333106efec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Unload Current
-  ShowUI: 0
-  change: 1
-  level: 3
-  specifiedLevel: {fileID: 0}
-  UserSaveIndex: 0
-  UserSaveName: Progress
-  OnComplete:
   - {fileID: 8627539300517219234}
 --- !u!114 &8627539300517219234
 MonoBehaviour:
@@ -387,29 +346,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aabe1ebc59bfa94499c44333106efec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Load Next
+  Name: Switch to Next
   ShowUI: 1
-  change: 0
+  change: 2
   level: 4
   specifiedLevel: {fileID: 0}
   UserSaveIndex: 0
   UserSaveName: Progress
-  OnComplete:
-  - {fileID: 2869113334958419182}
---- !u!114 &2869113334958419182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3521874450063626470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c68adda9532fd8043b281736d2a5fbcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Send GAME_START
-  MessageToSend: GAME_START
+  OnComplete: []
 --- !u!1 &4185931755669616141
 GameObject:
   m_ObjectHideFlags: 0
@@ -1227,10 +1171,7 @@ GameObject:
   - component: {fileID: 7358452557112002238}
   - component: {fileID: 5231563255206666217}
   - component: {fileID: 5408483858275289813}
-  - component: {fileID: 1428516531338884293}
-  - component: {fileID: 567105059805123643}
   - component: {fileID: 8810084786041925183}
-  - component: {fileID: 509186331139906514}
   m_Layer: 0
   m_Name: On MENU_START_GAME - Streaming
   m_TagString: Untagged
@@ -1266,8 +1207,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MessageName: MENU_START_GAME
   OnMessageRecieved:
-  - {fileID: 1428516531338884293}
   - {fileID: 5408483858275289813}
+  - {fileID: 8810084786041925183}
 --- !u!114 &5408483858275289813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1283,44 +1224,6 @@ MonoBehaviour:
   Name: Hide Cursor
   LockState: 1
   CursorVisible: 0
---- !u!114 &1428516531338884293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6874627137262727619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d6566ceaa073c944b7d03f43819b2a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fade to Black
-  Fading: 1
-  Duration: 1
-  OnComplete:
-  - {fileID: 567105059805123643}
---- !u!114 &567105059805123643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6874627137262727619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aabe1ebc59bfa94499c44333106efec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Unload MainMenu
-  ShowUI: 0
-  change: 1
-  level: 0
-  specifiedLevel: {fileID: 0}
-  UserSaveIndex: 0
-  UserSaveName: Progress
-  OnComplete:
-  - {fileID: 8810084786041925183}
 --- !u!114 &8810084786041925183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1333,29 +1236,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aabe1ebc59bfa94499c44333106efec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Load First
+  Name: Switch to First
   ShowUI: 1
-  change: 0
+  change: 2
   level: 1
   specifiedLevel: {fileID: 0}
   UserSaveIndex: 0
   UserSaveName: Progress
-  OnComplete:
-  - {fileID: 509186331139906514}
---- !u!114 &509186331139906514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6874627137262727619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c68adda9532fd8043b281736d2a5fbcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Send GAME_START
-  MessageToSend: GAME_START
+  OnComplete: []
 --- !u!1 &6887719395551333737
 GameObject:
   m_ObjectHideFlags: 0

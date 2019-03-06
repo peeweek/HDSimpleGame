@@ -1,4 +1,5 @@
 using GameplayIngredients;
+using GameplayIngredients.Actions;
 using GameplayIngredients.LevelStreaming;
 using NaughtyAttributes;
 using System.Linq;
@@ -22,20 +23,74 @@ public class GameManager : Manager
     public GameLevel[] MainGameLevels;
 
     [ShowNativeProperty]
-    public int currentLevel { get { return m_CurrentLevel; } }
+    public int currentLevel { get; private set; } = -2;
+
+    [ShowNativeProperty]
     public int currentSaveProgress {
         get { return Manager.Get<GameSaveManager>().GetInt("Game.Progress", GameSaveManager.Location.User);  }
         set { Manager.Get<GameSaveManager>().SetInt("Game.Progress", GameSaveManager.Location.User, value);  }
     }
 
-    // Not Serialized
-    int m_CurrentLevel = -2;
+    GameObject m_CurrentLevelSwitch;
+
 
     public void Start()
     {
-        m_CurrentLevel = int.MinValue;
+        currentLevel = int.MinValue;
         Callable.Call(OnGameStart);
         Manager.Get<GameSaveManager>().LoadUserSave(0);
+    }
+
+    Callable GetCurrentLevelSwitch(int targetLevel, bool showUI = false, Callable[] onComplete = null)
+    {
+        GameObject go = new GameObject();
+        go.name = $"LevelSwtich {currentLevel} -> {targetLevel}";
+        go.transform.parent = this.transform;
+        m_CurrentLevelSwitch = go;
+
+        var cameraFade = go.AddComponent<FullScreenFadeAction>();
+        var unloadLevel = go.AddComponent<GameLevelLoadAction>();
+        var loadLevel = go.AddComponent<GameLevelLoadAction>();
+        var sendMessage = go.AddComponent<SendMessageAction>();
+        var destroy = go.AddComponent<DestroyObjectAction>();
+
+        cameraFade.Fading = FullScreenFadeManager.FadeMode.ToBlack;
+        cameraFade.Name = "Fade to Black";
+        cameraFade.Duration = 1.0f;
+        cameraFade.OnComplete = new Callable[]{ unloadLevel };
+
+        unloadLevel.Name = "Unload Current";
+        unloadLevel.change = GameLevelLoadAction.Change.Unload;
+        unloadLevel.level = GameLevelLoadAction.Target.Current;
+        unloadLevel.ShowUI = false;
+        unloadLevel.OnComplete = new Callable[] { loadLevel };
+
+        loadLevel.Name = $"Load {targetLevel}";
+        loadLevel.change = GameLevelLoadAction.Change.Load;
+        loadLevel.level = GameLevelLoadAction.Target.SpecifiedLevel;
+        loadLevel.ShowUI = showUI;
+        loadLevel.specifiedLevel = MainGameLevels[targetLevel];
+        loadLevel.OnComplete = new Callable[] { sendMessage, destroy };
+
+        sendMessage.Name = "Send GAME_START";
+        sendMessage.MessageToSend = "GAME_START";
+
+        destroy.ObjectsToDestroy = new GameObject[] { go };
+
+        // Return first callable
+        return cameraFade;
+
+    }
+
+    public void SwitchLevel(int nextLevel, bool showUI = false, Callable[] onComplete = null)
+    {
+        if (m_CurrentLevelSwitch == null)
+        {
+            var call = GetCurrentLevelSwitch(nextLevel, showUI, onComplete);
+            call.Execute();
+        }
+        else
+            Debug.LogWarning("SwitchLevel : an Operation was still in progress and switching level could not be done");
     }
 
     public void LoadMainMenu(bool showUI = false, Callable[] onComplete = null)
@@ -44,7 +99,7 @@ public class GameManager : Manager
         {
             string[] levels = MainMenuGameLevel.StartupScenes;
             Manager.Get<LevelStreamingManager>().LoadScenes(LevelStreamingManager.StreamingAction.Load, levels, levels[0], showUI, onComplete);
-            m_CurrentLevel = -1;
+            currentLevel = -1;
         }
     }
 
@@ -54,7 +109,7 @@ public class GameManager : Manager
         {
             string[] levels = MainMenuGameLevel.ScenesToUnload;
             Manager.Get<LevelStreamingManager>().LoadScenes(LevelStreamingManager.StreamingAction.Unload, levels, null, showUI, onComplete);
-            m_CurrentLevel = -1;
+            currentLevel = -1;
         }
     }
 
@@ -62,6 +117,9 @@ public class GameManager : Manager
 
     public void LoadLevel(int index, bool showUI = true, Callable[] onComplete = null)
     {
+        if (index == -1)
+            LoadMainMenu(showUI, onComplete);
+
         if(index >= 0 
             && MainGameLevels != null 
             && index < MainGameLevels.Length 
@@ -82,12 +140,15 @@ public class GameManager : Manager
             }
 
             Manager.Get<LevelStreamingManager>().LoadScenes(LevelStreamingManager.StreamingAction.Load, levels, levels[0], showUI, nextCalls);
-            m_CurrentLevel = index;
+            currentLevel = index;
         }
     }
 
     public void UnloadLevel(int index, bool showUI = false, Callable[] onComplete = null)
     {
+        if (index == -1)
+            UnloadMainMenu(showUI, onComplete);
+
         if (index >= 0
             && MainGameLevels != null
             && index < MainGameLevels.Length

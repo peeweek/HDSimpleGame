@@ -10,7 +10,8 @@ public class GameLevelLoadAction : ActionBase
     public enum Change
     {
         Load,
-        Unload
+        Unload,
+        Switch
     }
 
     public enum Target
@@ -21,7 +22,7 @@ public class GameLevelLoadAction : ActionBase
         Current,
         Next,
         Last,
-        Specified,
+        SpecifiedLevel,
         FromGameSave,
     }
     public bool ShowUI = true;
@@ -38,7 +39,7 @@ public class GameLevelLoadAction : ActionBase
     [ReorderableList]
     public Callable[] OnComplete;
 
-    private bool isSpecified() { return level == Target.Specified; }
+    private bool isSpecified() { return level == Target.SpecifiedLevel; }
     private bool isGameSave() { return level == Target.FromGameSave; }
 
     public override void Execute(GameObject instigator = null)
@@ -54,7 +55,7 @@ public class GameLevelLoadAction : ActionBase
             case Target.Current: index = manager.currentLevel; break;
             case Target.Previous: index = Mathf.Max(0, manager.currentLevel-1); break;
             case Target.Next: index = Mathf.Min(manager.MainGameLevels.Length - 1, manager.currentLevel + 1); break;
-            case Target.Specified:
+            case Target.SpecifiedLevel:
                 if(specifiedLevel != null && manager.MainGameLevels.Contains(specifiedLevel))
                 {
                     index = manager.MainGameLevels.ToList().IndexOf(specifiedLevel);
@@ -72,6 +73,9 @@ public class GameLevelLoadAction : ActionBase
                 case Change.Unload:
                     manager.UnloadMainMenu(ShowUI, OnComplete);
                     break;
+                case Change.Switch:
+                    manager.SwitchLevel(-1, ShowUI, OnComplete);
+                    break;
             }
         }
         else
@@ -81,6 +85,9 @@ public class GameLevelLoadAction : ActionBase
                 case Change.Load: manager.LoadLevel(index, ShowUI, OnComplete);
                     break;
                 case Change.Unload: manager.UnloadLevel(index, ShowUI, OnComplete);
+                    break;
+                case Change.Switch:
+                    manager.SwitchLevel(index, ShowUI, OnComplete);
                     break;
             }
         }
