@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7d5bb3f971603247917785e7ea66453, type: 3}
-  m_Name: Full Game (PS4)
+  m_Name: Release Win64 IL2CPP
   m_EditorClassIdentifier: 
   Name: 
-  Category: PS4
-  BuildPath: Build/PS4/HDSimpleGame/
-  ExecutableName: HDSimpleGame
-  Profile: {fileID: 11400000, guid: 98b84dc0078dcfa4caca0ab7a00aebe7, type: 2}
+  Category: PC-Win64
+  Enabled: 1
+  BuildPath: Build/HDSimpleGame_IL2CPP/
+  ExecutableName: HDSimpleGame.exe
+  Profile: {fileID: 11400000, guid: 16a89fc7df6648545b978fc4a8e5e99b, type: 2}
   SceneList: {fileID: 11400000, guid: b1faf02d35845a64d96d5e6cf15f00b9, type: 2}
