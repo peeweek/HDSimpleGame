@@ -61,6 +61,7 @@ public class GameLevelLoadAction : ActionBase
                     index = manager.MainGameLevels.ToList().IndexOf(specifiedLevel);
                 }
                 break;
+            case Target.FromGameSave: index = manager.currentSaveProgress; break;
         }
 
         if(level == Target.MainMenu)

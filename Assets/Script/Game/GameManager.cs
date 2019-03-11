@@ -22,13 +22,15 @@ public class GameManager : Manager
     [ReorderableList,NonNullCheck]
     public GameLevel[] MainGameLevels;
 
+    [Header("Save")]
+    public string ProgressSaveName = "Progress";
     [ShowNativeProperty]
     public int currentLevel { get; private set; } = -2;
 
     [ShowNativeProperty]
     public int currentSaveProgress {
-        get { return Manager.Get<GameSaveManager>().GetInt("Game.Progress", GameSaveManager.Location.User);  }
-        set { Manager.Get<GameSaveManager>().SetInt("Game.Progress", GameSaveManager.Location.User, value);  }
+        get { Manager.Get<GameSaveManager>().LoadUserSave(0); return Manager.Get<GameSaveManager>().GetInt(ProgressSaveName, GameSaveManager.Location.User);  }
+        set { Manager.Get<GameSaveManager>().SetInt(ProgressSaveName, GameSaveManager.Location.User, value); Manager.Get<GameSaveManager>().SaveUserSave(0); }
     }
 
     GameObject m_CurrentLevelSwitch;
@@ -141,6 +143,7 @@ public class GameManager : Manager
 
             Manager.Get<LevelStreamingManager>().LoadScenes(LevelStreamingManager.StreamingAction.Load, levels, levels[0], showUI, nextCalls);
             currentLevel = index;
+            currentSaveProgress = index;
         }
     }
 
