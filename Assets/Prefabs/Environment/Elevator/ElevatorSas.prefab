@@ -32,6 +32,8 @@ GameObject:
   - component: {fileID: 8404236524023545429}
   - component: {fileID: 8179375474085527403}
   - component: {fileID: 5233270182123446605}
+  - component: {fileID: 8136861216189205403}
+  - component: {fileID: 5491503073975242107}
   m_Layer: 0
   m_Name: StateMachine-OpenDoor
   m_TagString: Untagged
@@ -83,7 +85,7 @@ PlayableDirector:
   m_PlayableAsset: {fileID: 11400000, guid: a040ad9bcda37a947aa1c0e193be6225, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
-  m_DirectorUpdateMode: 1
+  m_DirectorUpdateMode: 3
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: 114487975667535142, guid: a040ad9bcda37a947aa1c0e193be6225, type: 2}
@@ -128,6 +130,36 @@ MonoBehaviour:
   InitialTime: 0
   UnscaledGameTime: 0
   wrapMode: 0
+--- !u!114 &8136861216189205403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961591215880081049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313f9593d35b2c740928abbd82069aa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: SetState:Open
+  StateMachine: {fileID: 3702389707807813138}
+  m_State: StateOpen
+--- !u!114 &5491503073975242107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961591215880081049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313f9593d35b2c740928abbd82069aa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: SetState:Closed
+  StateMachine: {fileID: 3702389707807813138}
+  m_State: StateClosed
 --- !u!1 &5936445653085920595
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,7 +177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6260686945960695320
 Transform:
   m_ObjectHideFlags: 0
@@ -173,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OnStateEnter:
-  - {fileID: 5277416049267366497}
+  - {fileID: 8202725906375925797}
   OnStateExit: []
   OnStateUpdate: []
 --- !u!114 &8202725906375925797
@@ -192,7 +224,7 @@ MonoBehaviour:
   directorControlRig: {fileID: 5233270182123446605}
   SetPlayMode: 1
   PlayMode: 2
-  SetWrapMode: 1
+  SetWrapMode: 0
   WrapMode: 0
   SetTime: 0
   Time: 0
@@ -217,7 +249,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5889895134845466939
 Transform:
   m_ObjectHideFlags: 0
@@ -264,7 +296,7 @@ MonoBehaviour:
   directorControlRig: {fileID: 5233270182123446605}
   SetPlayMode: 1
   PlayMode: 1
-  SetWrapMode: 1
+  SetWrapMode: 0
   WrapMode: 0
   SetTime: 0
   Time: 0
@@ -282,7 +314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7718363718102041275}
   m_Layer: 0
-  m_Name: ElevatorTower
+  m_Name: ElevatorSas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -318,6 +350,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Elevator_Wall_Group
+      objectReference: {fileID: 0}
+    - target: {fileID: 725766788013283684, guid: fd9296f73dfee8c4493574c6b6009976,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1505523352923727329, guid: fd9296f73dfee8c4493574c6b6009976,
         type: 3}
@@ -414,10 +451,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1821161627790117206, guid: fd9296f73dfee8c4493574c6b6009976,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1821161627790117203, guid: fd9296f73dfee8c4493574c6b6009976,
         type: 3}
       propertyPath: m_Name
       value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821161627790117203, guid: fd9296f73dfee8c4493574c6b6009976,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1821161626288002050, guid: fd9296f73dfee8c4493574c6b6009976,
         type: 3}

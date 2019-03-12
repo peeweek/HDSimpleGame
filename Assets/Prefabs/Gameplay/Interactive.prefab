@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0219af91f351df2429e921b320124912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultState: 
+  DefaultState: State:Off
   States:
   - {fileID: 5324786387128685427}
   - {fileID: 5324786386817816819}
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313f9593d35b2c740928abbd82069aa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: SetStateAction
+  Name: Turn On
   StateMachine: {fileID: 5324786386881851568}
   m_State: State:On
 --- !u!1 &5324786387012670107
