@@ -407,7 +407,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c00334e91be987c45adefb396c462d66, type: 3}
+    m_Font: {fileID: 12800000, guid: ad9bbadc09870144b834b3e48ab404b2, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -422,11 +422,19 @@ MonoBehaviour:
   m_Text: '<size=48><b>DISCLAIMER</b></size>
 
 
-    This Game is the fruit of prototyping using unity and a set of additional scripts.
-    It is intended for educational purposes only.
+    This prototype has been made using open source libraries that accelerate production
+    and reduce code writing. You can find most of these scripts at: https://github.com/peeweek/
 
 
-    You can find most of these scripts at: https://github.com/peeweek/'
+    <size=12><i>
+
+    Characters and animations by mixamo.com
+
+
+    Gameplay Ingredients uses Naughty Attributes by Denis Rizov (github.com/dbrizov),
+    and Fugue Icons by Yusuke Kamiyamane (p,yusukekamiyamane.com)
+
+    </i></size>'
 --- !u!222 &774896122
 CanvasRenderer:
   m_ObjectHideFlags: 0
