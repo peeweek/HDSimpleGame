@@ -17,6 +17,7 @@ MonoBehaviour:
   - {fileID: 114769085861065930}
   - {fileID: 114022828392788556}
   - {fileID: 114941259819799298}
+  - {fileID: 114558508938002572}
 --- !u!114 &114022828392788556
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -145,6 +146,28 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 0
     min: 0
+--- !u!114 &114558508938002572
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4910d90e50201484ba448b791a192696, type: 3}
+  m_Name: VolumetricLightingController
+  m_EditorClassIdentifier: 
+  active: 1
+  depthExtent:
+    m_OverrideState: 1
+    m_Value: 32
+    min: 0.1
+  sliceDistributionUniformity:
+    m_OverrideState: 0
+    m_Value: 0.75
+    min: 0
+    max: 1
 --- !u!114 &114769085861065930
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -197,16 +220,16 @@ MonoBehaviour:
     min: 0
   mipFogMaxMip:
     m_OverrideState: 1
-    m_Value: 0.199
+    m_Value: 0.433
     min: 0
     max: 1
   mipFogNear:
     m_OverrideState: 1
-    m_Value: 128
+    m_Value: 0
     min: 0
   mipFogFar:
     m_OverrideState: 1
-    m_Value: 2000
+    m_Value: 500
     min: 0
   albedo:
     m_OverrideState: 0
@@ -216,14 +239,14 @@ MonoBehaviour:
     showEyeDropper: 1
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 12
+    m_Value: 32
     min: 1
   baseHeight:
     m_OverrideState: 1
     m_Value: 12
   meanHeight:
     m_OverrideState: 1
-    m_Value: 17.1
+    m_Value: 22.7
     min: 1
   anisotropy:
     m_OverrideState: 1
