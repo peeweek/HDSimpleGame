@@ -300,6 +300,7 @@ GameObject:
   - component: {fileID: 8549577032381029878}
   - component: {fileID: 8549577032381029769}
   - component: {fileID: 8549577032381029768}
+  - component: {fileID: 6259260502058328977}
   m_Layer: 0
   m_Name: NEXT_LEVEL Trigger
   m_TagString: Untagged
@@ -351,6 +352,7 @@ MonoBehaviour:
   ExitMaxCount: 0
   onTriggerEnter:
   - {fileID: 8549577032381029768}
+  - {fileID: 6259260502058328977}
   onTriggerExit: []
   OnlyInteractWithTag: 1
   Tag: Player
@@ -368,3 +370,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Send NEXT_LEVEL
   MessageToSend: NEXT_LEVEL
+--- !u!114 &6259260502058328977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8549577032381029771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e95bc72f073a6c348a551bed0cdc1176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Freeze Player
+  TargetCharacter: {fileID: 0}
+  ApplyOnInstigator: 1
+  ControlMode: 1
