@@ -265,7 +265,7 @@ MonoBehaviour:
   action: 0
   objectsToAttach: []
   AttachInstigator: 1
-  parentObject: {fileID: 0}
+  parentObject: {fileID: 1643683266067024952}
   KeepScale: 1
 --- !u!114 &1865747611171292257
 MonoBehaviour:
@@ -283,7 +283,7 @@ MonoBehaviour:
   action: 1
   objectsToAttach: []
   AttachInstigator: 1
-  parentObject: {fileID: 0}
+  parentObject: {fileID: 1643683266067024952}
   KeepScale: 1
 --- !u!1 &8690580093080786324
 GameObject:
@@ -663,6 +663,12 @@ PrefabInstance:
 --- !u!4 &1643683266067024959 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3347796525254018108, guid: 2440df5ab685ea04db8904f2398473ef,
+    type: 3}
+  m_PrefabInstance: {fileID: 4087661022916134915}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1643683266067024952 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3347796525254018107, guid: 2440df5ab685ea04db8904f2398473ef,
     type: 3}
   m_PrefabInstance: {fileID: 4087661022916134915}
   m_PrefabAsset: {fileID: 0}

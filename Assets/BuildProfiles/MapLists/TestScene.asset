@@ -9,16 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0e5997dc40a2dc47afc7b9a41a9a862, type: 3}
-  m_Name: Level03
+  m_Script: {fileID: 11500000, guid: 2aff50520461b4f4793f460a41194a2e, type: 3}
+  m_Name: TestScene
   m_EditorClassIdentifier: 
-  StartupScenes:
-  - Level03
-  - Level03_Ground
-  - Level03_Upper_BG
-  ScenesToUnload:
-  - Level03
-  - Level03_Ground
-  - Level03_Ground_BG
-  - Level03_Upper
-  - Level03_Upper_BG
+  Name: Test Scene
+  Category: 
+  Scenes:
+  - {fileID: 102900000, guid: 7f0ac696dadaa7142b864fa4150842e9, type: 3}
+  - {fileID: 102900000, guid: ae6093777a7feb347b29c77345eb0d1e, type: 3}
