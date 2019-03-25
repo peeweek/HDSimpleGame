@@ -98,6 +98,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8446004628740290319}
   - component: {fileID: 5148001222561227606}
+  - component: {fileID: 1947430620780347293}
+  - component: {fileID: 7843184806687333889}
   m_Layer: 0
   m_Name: DoorSystem_Double
   m_TagString: Untagged
@@ -143,6 +145,36 @@ MonoBehaviour:
   States:
   - {fileID: 3851765771621300191}
   - {fileID: 803124967254017445}
+--- !u!114 &1947430620780347293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8446004628740290321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313f9593d35b2c740928abbd82069aa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Set Open
+  StateMachine: {fileID: 5148001222561227606}
+  m_State: State Open
+--- !u!114 &7843184806687333889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8446004628740290321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313f9593d35b2c740928abbd82069aa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Set Closed
+  StateMachine: {fileID: 5148001222561227606}
+  m_State: State Closed
 --- !u!1 &8446004629458166460
 GameObject:
   m_ObjectHideFlags: 0
