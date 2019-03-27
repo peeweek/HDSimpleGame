@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3122074595512525109}
   - component: {fileID: 3190488033946270581}
+  - component: {fileID: 2838478242591910644}
+  - component: {fileID: 2129019052797651445}
+  - component: {fileID: 4984209240792721852}
   m_Layer: 0
   m_Name: WarningLight
   m_TagString: Untagged
@@ -52,6 +55,51 @@ MonoBehaviour:
   - {fileID: 2941490021659966782}
   - {fileID: 7060761805294417968}
   - {fileID: 7709073348928781617}
+--- !u!114 &2838478242591910644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163305094298340607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313f9593d35b2c740928abbd82069aa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Set Off
+  StateMachine: {fileID: 3190488033946270581}
+  m_State: State Off
+--- !u!114 &2129019052797651445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163305094298340607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313f9593d35b2c740928abbd82069aa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Set Red
+  StateMachine: {fileID: 3190488033946270581}
+  m_State: State Red
+--- !u!114 &4984209240792721852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163305094298340607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313f9593d35b2c740928abbd82069aa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Set Green
+  StateMachine: {fileID: 3190488033946270581}
+  m_State: State Green
 --- !u!1 &1320074984780648537
 GameObject:
   m_ObjectHideFlags: 0
