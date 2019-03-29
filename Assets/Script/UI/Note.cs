@@ -25,20 +25,33 @@ remaining essentially unchanged.";
     public TextMesh TitleTM;
     public TextMesh BodyTM;
 
+    private void Start()
+    {
+        UpdateText();
+    }
 
     private void OnValidate()
     {
-        if(TitleTM != null)
+        UpdateText();
+    }
+
+    void UpdateText()
+    {
+        if (TitleTM != null)
         {
             TitleTM.text = Title;
+            TitleTM.fontSize = 0;
+            TitleTM.fontStyle = FontStyle.Normal;
             TitleTM.color = TitleColor;
         }
 
-        if(BodyTM != null)
+        if (BodyTM != null)
         {
             BodyTM.text = Body;
+            BodyTM.fontSize = 0;
+            BodyTM.fontStyle = FontStyle.Normal;
             BodyTM.color = BodyColor;
         }
     }
-    
+
 }
