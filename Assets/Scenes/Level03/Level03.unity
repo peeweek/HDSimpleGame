@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.067443006, g: 0.08891078, b: 0.13196805, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7541,6 +7541,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667263118}
   - component: {fileID: 667263117}
+  - component: {fileID: 667263121}
   - component: {fileID: 667263116}
   - component: {fileID: 667263120}
   - component: {fileID: 667263119}
@@ -7581,8 +7582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MessageName: GAME_START
   OnMessageRecieved:
-  - {fileID: 667263116}
-  - {fileID: 667263120}
+  - {fileID: 667263121}
 --- !u!4 &667263118
 Transform:
   m_ObjectHideFlags: 0
@@ -7629,6 +7629,23 @@ MonoBehaviour:
   Name: NextFrameLogic
   OnNextFrame:
   - {fileID: 667263119}
+--- !u!114 &667263121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667263115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5238971271a4cd43b4a07ba72a48e09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Only Once
+  Calls:
+  - {fileID: 667263116}
+  - {fileID: 667263120}
+  Count: 1
 --- !u!43 &710607622
 Mesh:
   m_ObjectHideFlags: 0
@@ -8720,6 +8737,7 @@ GameObject:
   - component: {fileID: 771150151}
   - component: {fileID: 771150150}
   - component: {fileID: 771150149}
+  - component: {fileID: 771150152}
   - component: {fileID: 771150148}
   - component: {fileID: 771150147}
   m_Layer: 0
@@ -8785,7 +8803,7 @@ MonoBehaviour:
   EnterMaxCount: 0
   ExitMaxCount: 0
   onTriggerEnter:
-  - {fileID: 771150148}
+  - {fileID: 771150152}
   onTriggerExit: []
   OnlyInteractWithTag: 1
   Tag: Player
@@ -8816,6 +8834,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &771150152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771150146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5238971271a4cd43b4a07ba72a48e09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Once
+  Calls:
+  - {fileID: 771150148}
+  Count: 1
 --- !u!1001 &786064224
 PrefabInstance:
   m_ObjectHideFlags: 0
