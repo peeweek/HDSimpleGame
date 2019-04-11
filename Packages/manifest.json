@@ -7,10 +7,10 @@
     "com.unity.progrids": "3.0.3-preview.4",
     "com.unity.render-pipelines.high-definition": "4.10.0-preview",
     "com.unity.visualeffectgraph": "4.10.0-preview",
-    "net.peeweek.build-frontend": "file:../../net.peeweek.build-frontend",
-    "net.peeweek.console": "file:../../net.peeweek.console",
-    "net.peeweek.gameplay-ingredients": "file:../../net.peeweek.gameplay-ingredients",
-    "net.peeweek.third-person-controller": "file:../../net.peeweek.third-person-controller",
+    "net.peeweek.build-frontend": "https://github.com/peeweek/net.peeweek.build-frontend.git#1.0.0-preview",
+    "net.peeweek.console": "https://github.com/peeweek/net.peeweek.console.git#1.0.1-preview",
+    "net.peeweek.gameplay-ingredients": "https://github.com/peeweek/net.peeweek.gameplay-ingredients.git#2018.3.0",
+    "net.peeweek.third-person-controller": "https://github.com/peeweek/net.peeweek.third-person-controller.git#2018.3.0-preview",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
     "com.unity.modules.assetbundle": "1.0.0",
@@ -42,5 +42,23 @@
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
   },
-  "registry": "https://staging-packages.unity.com"
+  "registry": "https://staging-packages.unity.com",
+  "lock": {
+    "net.peeweek.build-frontend": {
+      "hash": "14fa681f779d181427657c511af9b8969b9db89f",
+      "revision": "1.0.0-preview"
+    },
+    "net.peeweek.console": {
+      "hash": "ce92938149a1c7c56a43f039e81344fcbfade119",
+      "revision": "1.0.1-preview"
+    },
+    "net.peeweek.gameplay-ingredients": {
+      "hash": "10b4cfd3bc879966a1c55a4b2b71ab5355f4b567",
+      "revision": "2018.3.0"
+    },
+    "net.peeweek.third-person-controller": {
+      "hash": "2783ade59eb3d28dc75a213d550a3f34ba74e1a8",
+      "revision": "2018.3.0-preview"
+    }
+  }
 }
