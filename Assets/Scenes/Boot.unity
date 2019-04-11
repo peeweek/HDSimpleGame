@@ -485,8 +485,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -44.7}
-  m_SizeDelta: {x: 800, y: 422.5}
+  m_AnchoredPosition: {x: 0, y: -29}
+  m_SizeDelta: {x: 800, y: 496.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &774896121
 MonoBehaviour:
@@ -521,26 +521,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '
-
-
-
-    This prototype has been made using open source libraries that accelerate production
-    and reduce code writing. You can find most of these scripts at: https://github.com/peeweek/
-
-
-    Gameplay Ingredients / Console / Build Frontend
-
-
-    <size=12><i>
-
-    Characters and animations by mixamo.com
-
-
-    Gameplay Ingredients uses Naughty Attributes by Denis Rizov (github.com/dbrizov),
-    and Fugue Icons by Yusuke Kamiyamane (p,yusukekamiyamane.com)
-
-    </i></size>'
+  m_Text: "\n\nThis prototype has been made using open source libraries that accelerate
+    production and reduce code writing.\n\nYou can download the full project at this
+    address:\n<b>https://github.com/peeweek/HDSimpleGame</b>\n\n<size=12>\n<b>This
+    project uses the following open source scripts and assets:</b> \ngithub.com/peeweek/net.peeweek.console\ngithub.com/peeweek/net.peeweek.gameplay-ingredients\ngithub.com/peeweek/net.peeweek.build-frontend\ngithub.com/peeweek/net.peeweek.third-person-controller\n\n\n<i>\nCharacters
+    and animations by mixamo.com\n\nGameplay Ingredients uses Naughty Attributes by
+    Denis Rizov (github.com/dbrizov), and Fugue Icons by Yusuke Kamiyamane (p,yusukekamiyamane.com)\n</i>\n</size>"
 --- !u!222 &774896122
 CanvasRenderer:
   m_ObjectHideFlags: 0
