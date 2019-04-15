@@ -1,16 +1,19 @@
 {
   "dependencies": {
     "com.unity.assetbundlebrowser": "1.7.0",
-    "com.unity.cinemachine": "2.2.8",
-    "com.unity.package-manager-ui": "2.0.7",
-    "com.unity.probuilder": "4.0.3",
+    "com.unity.cinemachine": "2.3.3",
+    "com.unity.multiplayer-hlapi": "1.0.2",
+    "com.unity.package-manager-ui": "2.1.2",
+    "com.unity.probuilder": "4.0.4",
     "com.unity.progrids": "3.0.3-preview.4",
-    "com.unity.render-pipelines.high-definition": "4.10.0-preview",
-    "com.unity.visualeffectgraph": "4.10.0-preview",
+    "com.unity.render-pipelines.high-definition": "5.12.0-preview",
+    "com.unity.timeline": "1.0.0",
+    "com.unity.visualeffectgraph": "5.12.0-preview",
+    "com.unity.xr.legacyinputhelpers": "2.0.2",
     "net.peeweek.build-frontend": "https://github.com/peeweek/net.peeweek.build-frontend.git#1.0.0-preview",
     "net.peeweek.console": "https://github.com/peeweek/net.peeweek.console.git#1.0.1-preview",
-    "net.peeweek.gameplay-ingredients": "https://github.com/peeweek/net.peeweek.gameplay-ingredients.git#2018.3.0",
-    "net.peeweek.third-person-controller": "https://github.com/peeweek/net.peeweek.third-person-controller.git#2018.3.0-preview",
+    "net.peeweek.gameplay-ingredients": "file:../../net.peeweek.gameplay-ingredients",
+    "net.peeweek.third-person-controller": "file:../../net.peeweek.third-person-controller",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
     "com.unity.modules.assetbundle": "1.0.0",
@@ -51,14 +54,6 @@
     "net.peeweek.console": {
       "hash": "ce92938149a1c7c56a43f039e81344fcbfade119",
       "revision": "1.0.1-preview"
-    },
-    "net.peeweek.gameplay-ingredients": {
-      "hash": "10b4cfd3bc879966a1c55a4b2b71ab5355f4b567",
-      "revision": "2018.3.0"
-    },
-    "net.peeweek.third-person-controller": {
-      "hash": "2783ade59eb3d28dc75a213d550a3f34ba74e1a8",
-      "revision": "2018.3.0-preview"
     }
   }
 }
