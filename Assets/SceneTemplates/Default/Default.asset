@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 261311c8711012d489943f40ba26402d, type: 3}
+  m_Name: Default
+  m_EditorClassIdentifier: 
+  ListName: Default Scenes
+  Templates:
+  - Name: Default HDRP Scene
+    Description: 'Default Scene Template for High-Definition Render Pipeline.
+
+
+      Includes a Camera, a Directional Light, and Two global volumes for render settings
+      and postprocessing.'
+    Scene: {fileID: 102900000, guid: d1f01f560be7fdc4ea5eaf3aef1aebc7, type: 3}
+  - Name: Empty
+    Description: An empty Scene
+    Scene: {fileID: 102900000, guid: 3c0e6ec61e00af4448294bd592074a1e, type: 3}
