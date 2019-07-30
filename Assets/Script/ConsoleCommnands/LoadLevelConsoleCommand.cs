@@ -1,4 +1,5 @@
 using Console;
+using GameplayIngredients;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,7 +28,7 @@ public class LoadLevelConsoleCommand : IConsoleCommand
             int idx;
             if(int.TryParse(args[0], out idx))
             {
-                var manager = GameplayIngredients.Manager.Get<GameManager>();
+                var manager = Manager.Get<GameManager>();
                 idx = Mathf.Clamp(idx, -1, manager.MainGameLevels.Length-1);
                 Console.Console.Log(name, $"Loading Game level #{idx} ...");
                 manager.SwitchLevel(idx, true, null);

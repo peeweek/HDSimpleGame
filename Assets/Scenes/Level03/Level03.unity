@@ -1150,7 +1150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Send Game Start
-  MessageToSend: GAME_START
+  MessageToSend: GAME_MANAGER_LEVEL_START
 --- !u!114 &106901553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4678,6 +4678,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8549577032381029768, guid: 652bc2d49128d654fb393b8b9bdc3fba,
+        type: 3}
+      propertyPath: MessageToSend
+      value: NEXT_LEVEL_NOUI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 652bc2d49128d654fb393b8b9bdc3fba, type: 3}
 --- !u!43 &422288375
@@ -7693,7 +7698,7 @@ GameObject:
   - component: {fileID: 667263120}
   - component: {fileID: 667263119}
   m_Layer: 0
-  m_Name: 'On: GAME_START'
+  m_Name: On Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7724,10 +7729,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 667263115}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a42a87995c7dd1418e01c581ec175f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 2089a4bf3f6e46d40be6510a3989744d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessageName: GAME_START
+  m_LevelType: 1
   OnMessageRecieved:
   - {fileID: 667263121}
 --- !u!4 &667263118

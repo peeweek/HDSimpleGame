@@ -101,7 +101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2317791065025754744}
-  - component: {fileID: 8228121315134160705}
+  - component: {fileID: 3057296475069661928}
   - component: {fileID: 2317791065025754745}
   - component: {fileID: 600669375431565052}
   - component: {fileID: 3536433921149200747}
@@ -128,7 +128,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &8228121315134160705
+--- !u!114 &3057296475069661928
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,10 +137,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2317791065025754747}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a42a87995c7dd1418e01c581ec175f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 2089a4bf3f6e46d40be6510a3989744d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessageName: GAME_START
+  m_LevelType: 1
   OnMessageRecieved:
   - {fileID: 2317791065025754745}
 --- !u!114 &2317791065025754745

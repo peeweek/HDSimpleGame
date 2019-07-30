@@ -789,15 +789,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 634347497}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a42a87995c7dd1418e01c581ec175f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 2089a4bf3f6e46d40be6510a3989744d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessageName: MAINMENU_START
+  m_LevelType: 0
   OnMessageRecieved:
   - {fileID: 634347498}
   - {fileID: 634347501}
-  - {fileID: 634347503}
   - {fileID: 634347502}
+  - {fileID: 634347503}
 --- !u!4 &634347500
 Transform:
   m_ObjectHideFlags: 0
@@ -1553,7 +1553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: SendMessageAction
-  MessageToSend: MAINMENU_START
+  MessageToSend: GAME_MANAGER_MAINMENU_START
 --- !u!1 &1527649283
 GameObject:
   m_ObjectHideFlags: 3

@@ -1,50 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1741729027749883184
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8927561016709238841}
-  - component: {fileID: 5110950760989537472}
-  m_Layer: 0
-  m_Name: On Level Start
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8927561016709238841
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1741729027749883184}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 7679178975215622487}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5110950760989537472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1741729027749883184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c68adda9532fd8043b281736d2a5fbcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Send GAME_START
-  MessageToSend: GAME_START
 --- !u!1 &2391957315306162015
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,6 +79,73 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Exit Game
+--- !u!1 &2529735173736213800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4681235276656703123}
+  - component: {fileID: 8584025025903416422}
+  - component: {fileID: 1491655953049523140}
+  m_Layer: 0
+  m_Name: On NEXT_LEVEL_NOUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4681235276656703123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2529735173736213800}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7679178975215622487}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8584025025903416422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2529735173736213800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a42a87995c7dd1418e01c581ec175f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MessageName: NEXT_LEVEL_NOUI
+  OnMessageRecieved:
+  - {fileID: 1491655953049523140}
+--- !u!114 &1491655953049523140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2529735173736213800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aabe1ebc59bfa94499c44333106efec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Switch to Next
+  ShowUI: 0
+  level: 4
+  specifiedLevel: {fileID: 0}
+  UserSaveIndex: 0
+  UserSaveName: Progress
+  SaveProgress: 0
+  OnComplete: []
 --- !u!1 &2852898792376029658
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,11 +155,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1214489575276298033}
-  - component: {fileID: 2201348618275387629}
+  - component: {fileID: 5929008317840928751}
   - component: {fileID: 148373540391710836}
   - component: {fileID: 8641492950067349299}
   m_Layer: 0
-  m_Name: On GAME_START - PauseMenu
+  m_Name: 'On LEVEL_START : Enable PauseMenu'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,9 +177,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7679178975215622487}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2201348618275387629
+--- !u!114 &5929008317840928751
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,10 +188,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2852898792376029658}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a42a87995c7dd1418e01c581ec175f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 2089a4bf3f6e46d40be6510a3989744d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessageName: GAME_START
+  m_LevelType: 1
   OnMessageRecieved:
   - {fileID: 148373540391710836}
   - {fileID: 8641492950067349299}
@@ -215,7 +237,6 @@ GameObject:
   - component: {fileID: 4451373349563513221}
   - component: {fileID: 7234447958495616426}
   - component: {fileID: 4659997983612386573}
-  - component: {fileID: 1151459572194677049}
   m_Layer: 0
   m_Name: On BOOT_COMPLETE
   m_TagString: Untagged
@@ -266,27 +287,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Load MainMenu
   ShowUI: 0
-  change: 0
   level: 0
   specifiedLevel: {fileID: 0}
   UserSaveIndex: 0
   UserSaveName: Progress
-  OnComplete:
-  - {fileID: 1151459572194677049}
---- !u!114 &1151459572194677049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2898751834708994570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c68adda9532fd8043b281736d2a5fbcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Send MAINMENU_START
-  MessageToSend: MAINMENU_START
+  SaveProgress: 0
+  OnComplete: []
 --- !u!1 &3521874450063626470
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +323,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7679178975215622487}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1884124081315244603
 MonoBehaviour:
@@ -348,11 +354,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Switch to Next
   ShowUI: 1
-  change: 2
   level: 4
   specifiedLevel: {fileID: 0}
   UserSaveIndex: 0
   UserSaveName: Progress
+  SaveProgress: 1
   OnComplete: []
 --- !u!1 &4185931755669616141
 GameObject:
@@ -454,17 +460,20 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 1, g: 0.6217325, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 1, g: 0.6217325, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
+    m_SelectedTrigger: Highlighted
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 4148264769853526899}
@@ -589,9 +598,7 @@ GameObject:
   - component: {fileID: 4859442874873441467}
   - component: {fileID: 1366847399300087476}
   - component: {fileID: 282652844847516721}
-  - component: {fileID: 8676058086932506538}
   - component: {fileID: 3410292243518967409}
-  - component: {fileID: 3902545109351497581}
   m_Layer: 0
   m_Name: On RETURN_TO_MAINMENU - Streaming
   m_TagString: Untagged
@@ -644,27 +651,6 @@ MonoBehaviour:
   Fading: 1
   Duration: 2
   OnComplete:
-  - {fileID: 8676058086932506538}
---- !u!114 &8676058086932506538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4616524248671979901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aabe1ebc59bfa94499c44333106efec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Unload Current
-  ShowUI: 1
-  change: 1
-  level: 3
-  specifiedLevel: {fileID: 0}
-  UserSaveIndex: 0
-  UserSaveName: Progress
-  OnComplete:
   - {fileID: 3410292243518967409}
 --- !u!114 &3410292243518967409
 MonoBehaviour:
@@ -680,27 +666,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Load Main Menu
   ShowUI: 1
-  change: 0
   level: 0
   specifiedLevel: {fileID: 0}
   UserSaveIndex: 0
   UserSaveName: Progress
-  OnComplete:
-  - {fileID: 3902545109351497581}
---- !u!114 &3902545109351497581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4616524248671979901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c68adda9532fd8043b281736d2a5fbcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: MAINMENU_START
-  MessageToSend: MAINMENU_START
+  SaveProgress: 0
+  OnComplete: []
 --- !u!1 &5209807687994477797
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,7 +705,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4118525161043442091}
-  - {fileID: 7549716438202920075}
   m_Father: {fileID: 6250001660253533341}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -893,6 +863,36 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Return to Menu
+--- !u!1 &5707115548099119689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1897572540914619890}
+  m_Layer: 0
+  m_Name: ______________________
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &1897572540914619890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5707115548099119689}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7679178975215622487}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5981271326446686562
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,7 +979,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7679178975215622487}
   - component: {fileID: 2445809566104708400}
-  - component: {fileID: 7959374374315370052}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1004,10 +1003,11 @@ Transform:
   - {fileID: 7358452557112002238}
   - {fileID: 5261301554499313542}
   - {fileID: 4859442874873441467}
-  - {fileID: 6971537568633566062}
-  - {fileID: 1214489575276298033}
-  - {fileID: 8927561016709238841}
   - {fileID: 2347812634749720423}
+  - {fileID: 4681235276656703123}
+  - {fileID: 1897572540914619890}
+  - {fileID: 1214489575276298033}
+  - {fileID: 6971537568633566062}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1034,19 +1034,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d59b14316b2628848a139594cf5d9404, type: 2}
   - {fileID: 11400000, guid: a2a8ff911707bbf40ab5ea7ae178b2a7, type: 2}
   ProgressSaveName: Progress
---- !u!114 &7959374374315370052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6138268846344736833}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73a282d4d28ee274bbad90931cc555d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Enable: 1
 --- !u!1 &6250001660253533342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,54 +1115,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: FocusUIAction
   UIObjectToFocus: {fileID: 6628799341439697346}
---- !u!1 &6529382763251250118
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7549716438202920075}
-  - component: {fileID: 6337475641912843830}
-  m_Layer: 8
-  m_Name: PostProcess
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7549716438202920075
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6529382763251250118}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5588010805214969831}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6337475641912843830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6529382763251250118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 28f16b161f57c594d8a321ebe1b02b98, type: 2}
-  isGlobal: 1
-  blendDistance: 0
-  weight: 1
-  priority: 99999
 --- !u!1 &6874627137262727619
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,11 +1193,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Switch to First
   ShowUI: 1
-  change: 2
   level: 1
   specifiedLevel: {fileID: 0}
   UserSaveIndex: 0
   UserSaveName: Progress
+  SaveProgress: 0
   OnComplete: []
 --- !u!1 &6887719395551333737
 GameObject:
@@ -1459,17 +1398,20 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 1, g: 0.6217325, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 1, g: 0.6217325, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
+    m_SelectedTrigger: Highlighted
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 923909256083753512}
@@ -1590,13 +1532,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aabe1ebc59bfa94499c44333106efec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Switch to First
+  Name: Switch to Game Save
   ShowUI: 1
-  change: 2
   level: 7
   specifiedLevel: {fileID: 0}
   UserSaveIndex: 0
   UserSaveName: Progress
+  SaveProgress: 0
   OnComplete: []
 --- !u!1 &8977565413594992333
 GameObject:
@@ -1610,7 +1552,7 @@ GameObject:
   - component: {fileID: 1562536890321437851}
   - component: {fileID: 5560366310523898308}
   m_Layer: 0
-  m_Name: On RETURN_TO_MAINMENU - PauseMenu
+  m_Name: On RETURN_TO_MAINMENU - Disable PauseMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1628,7 +1570,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7679178975215622487}
-  m_RootOrder: 6
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1562536890321437851
 MonoBehaviour:
