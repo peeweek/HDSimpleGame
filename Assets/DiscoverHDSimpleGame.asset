@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c49654b9bada340bfd165d70dc8296, type: 3}
+  m_Name: DiscoverHDSimpleGame
+  m_EditorClassIdentifier: 
+  WindowTitle: HD Simple Game
+  HeaderTexture: {fileID: 2800000, guid: 4f68693193fb1fa4d8307b820b01ec14, type: 3}
+  WindowWidth: 640
+  WindowHeight: 520
+  DiscoverListWidth: 180
+  EnableShowAtStartup: 1
+  PreferenceName: HDSimpleGame
+  Title: Welcome to HD Simple Game !
+  Description: "HD Simple Game is a free, open source project that showcases a set
+    of open source libraries for unity. It is rendered using HD Render Pipeline, and
+    makes uses\xF6\n\n\n\nYou can get the source at the following address: https://github.com/peeweek/HDSimpleGame"
+  Scenes:
+  - Title: Main Menu
+    Description: 'Main Menu is the level that lets you access the rest of the game.
+
+      This level contains a basic 3D Scene and menus to start, continue or quit the
+      game.'
+    SceneSetup: {fileID: 0}
+    SingleScene: {fileID: 102900000, guid: ba8183f76f9f9b14eb5fa9af1d4b6d9c, type: 3}
+  - Title: Level 01
+    Description: "A Simple level that teaches gameplay controls. It contains only
+      one scene with a player start, some platforms and a pickup to get some speed
+      boost. \nThe goal is to reach the red flying dot at the end of the platform."
+    SceneSetup: {fileID: 0}
+    SingleScene: {fileID: 102900000, guid: d72adbe400d925f46ab837e1b4dc0d19, type: 3}
+  - Title: Level 02
+    Description: 'A level that showcases level scripting done with Gameplay Ingredients.
+
+
+      It is not a challenging scene but instead an example of how to use things and
+      how to factorize stuff in prefabs.'
+    SceneSetup: {fileID: 0}
+    SingleScene: {fileID: 102900000, guid: 9227420f393d0b94686d8a2bbf95bcd2, type: 3}
+  - Title: Level 03
+    Description: 'A level with a streaming section. Showcases door systems and an
+      elevator system.
+
+
+      During the elevation, the bottom level is streamed out and a lightweight version
+      (BG) is loaded.'
+    SceneSetup: {fileID: 11400000, guid: a172311334bac7946bde0efd416e1630, type: 2}
+    SingleScene: {fileID: 0}
+  Debug: 1
