@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.056549024, g: 0.07454651, b: 0.11076259, a: 1}
+  m_IndirectSpecularColor: {r: 0.056592476, g: 0.07460984, b: 0.11085617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -640,11 +640,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 106901550}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c68adda9532fd8043b281736d2a5fbcf, type: 3}
+  m_Script: {fileID: 11500000, guid: 15ae69d69e7aeaf4fbfb02e7175ed5f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Send Game Start
-  MessageToSend: GAME_MANAGER_LEVEL_START
+  messageType: 1
 --- !u!114 &106901553
 MonoBehaviour:
   m_ObjectHideFlags: 0

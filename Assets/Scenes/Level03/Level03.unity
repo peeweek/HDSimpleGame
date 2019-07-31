@@ -1146,11 +1146,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 106901550}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c68adda9532fd8043b281736d2a5fbcf, type: 3}
+  m_Script: {fileID: 11500000, guid: 15ae69d69e7aeaf4fbfb02e7175ed5f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Send Game Start
-  MessageToSend: GAME_MANAGER_LEVEL_START
+  messageType: 1
 --- !u!114 &106901553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12633,11 +12633,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5324786386817816818, guid: 7bf5150c3132d0449b0ed2679787dd28,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5324786386817816819, guid: 7bf5150c3132d0449b0ed2679787dd28,
         type: 3}
       propertyPath: OnStateEnter.Array.size
@@ -12658,6 +12653,11 @@ PrefabInstance:
       propertyPath: OnStateEnter.Array.data[1]
       value: 
       objectReference: {fileID: 112947099}
+    - target: {fileID: 5324786386817816818, guid: 7bf5150c3132d0449b0ed2679787dd28,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf5150c3132d0449b0ed2679787dd28, type: 3}
 --- !u!43 &1132042283
@@ -13367,11 +13367,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5324786386817816818, guid: 7bf5150c3132d0449b0ed2679787dd28,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5324786386817816819, guid: 7bf5150c3132d0449b0ed2679787dd28,
         type: 3}
       propertyPath: OnStateEnter.Array.size
@@ -13397,6 +13392,11 @@ PrefabInstance:
       propertyPath: OnStateEnter.Array.data[0]
       value: 
       objectReference: {fileID: 1970537286}
+    - target: {fileID: 5324786386817816818, guid: 7bf5150c3132d0449b0ed2679787dd28,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5324786387128685425, guid: 7bf5150c3132d0449b0ed2679787dd28, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7bf5150c3132d0449b0ed2679787dd28, type: 3}
