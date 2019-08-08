@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.10427432, g: 0.11538529, b: 0.1375571, a: 1}
+  m_IndirectSpecularColor: {r: 0.10439806, g: 0.115515105, b: 0.13768667, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8677,10 +8677,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FactoryBlueprints:
   - {fileID: 3354862971841549540, guid: 5581b5fae7896344f98610b7b526c74a, type: 3}
-  SpawnTarget: {fileID: 691474506}
   blueprintSelecionMode: 0
-  RespawnTarget: 1
+  gameSaveLocation: 1
+  gameSaveVariableName: FactoryBPIndex
+  defaultGameSaveIndex: 0
+  SpawnTarget: {fileID: 691474506}
   spawnLocation: 1
+  RespawnTarget: 1
   RespawnDelay: 3
   ReapInstancesOnDestroy: 1
   MaxInstances: 1
@@ -11256,6 +11259,7 @@ MonoBehaviour:
   - {fileID: 974509587}
   Factory: {fileID: 1518047015}
   FactoryIndex: 0
+  ContinueEvenIfNull: 0
 --- !u!1 &984028360
 GameObject:
   m_ObjectHideFlags: 0
@@ -17339,10 +17343,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FactoryBlueprints:
   - {fileID: 3354862971841549540, guid: 5581b5fae7896344f98610b7b526c74a, type: 3}
-  SpawnTarget: {fileID: 463426943}
   blueprintSelecionMode: 0
-  RespawnTarget: 1
+  gameSaveLocation: 1
+  gameSaveVariableName: FactoryBPIndex
+  defaultGameSaveIndex: 0
+  SpawnTarget: {fileID: 463426943}
   spawnLocation: 1
+  RespawnTarget: 1
   RespawnDelay: 3
   ReapInstancesOnDestroy: 1
   MaxInstances: 1
@@ -17938,10 +17945,13 @@ MonoBehaviour:
   - {fileID: 1834632679888139607, guid: f6fdd26474a83494d95fdc599b33e504, type: 3}
   - {fileID: 5712569581741774391, guid: 61fa617a6e641ae43839803478a95f6f, type: 3}
   - {fileID: 4102427450031919394, guid: 3ccbe4af8ffa69a43980b3fbf2ded2c4, type: 3}
-  SpawnTarget: {fileID: 823284708}
   blueprintSelecionMode: 0
-  RespawnTarget: 0
+  gameSaveLocation: 1
+  gameSaveVariableName: FactoryBPIndex
+  defaultGameSaveIndex: 0
+  SpawnTarget: {fileID: 823284708}
   spawnLocation: 1
+  RespawnTarget: 0
   RespawnDelay: 3
   ReapInstancesOnDestroy: 1
   MaxInstances: 3
@@ -22844,55 +22854,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3536433921149200747, guid: 73ea2a904120a9d41ba722da9e9f1a3b,
         type: 3}
-      propertyPath: OnSpawn.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3536433921149200747, guid: 73ea2a904120a9d41ba722da9e9f1a3b,
-        type: 3}
-      propertyPath: FactoryBlueprints.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3536433921149200747, guid: 73ea2a904120a9d41ba722da9e9f1a3b,
-        type: 3}
       propertyPath: OnSpawn.Array.data[0]
       value: 
       objectReference: {fileID: 1807130842}
-    - target: {fileID: 3536433921149200747, guid: 73ea2a904120a9d41ba722da9e9f1a3b,
-        type: 3}
-      propertyPath: RespawnDelay
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3536433921149200747, guid: 73ea2a904120a9d41ba722da9e9f1a3b,
-        type: 3}
-      propertyPath: FactoryBlueprints.Array.data[5]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3536433921149200747, guid: 73ea2a904120a9d41ba722da9e9f1a3b,
-        type: 3}
-      propertyPath: FactoryBlueprints.Array.data[4]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3536433921149200747, guid: 73ea2a904120a9d41ba722da9e9f1a3b,
-        type: 3}
-      propertyPath: FactoryBlueprints.Array.data[3]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3536433921149200747, guid: 73ea2a904120a9d41ba722da9e9f1a3b,
-        type: 3}
-      propertyPath: FactoryBlueprints.Array.data[2]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3536433921149200747, guid: 73ea2a904120a9d41ba722da9e9f1a3b,
-        type: 3}
-      propertyPath: FactoryBlueprints.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3536433921149200747, guid: 73ea2a904120a9d41ba722da9e9f1a3b,
-        type: 3}
-      propertyPath: FactoryBlueprints.Array.data[0]
-      value: 
-      objectReference: {fileID: 3354862971841549540, guid: 1b6e6f5571c84694c9c526a74c9e8a8e,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73ea2a904120a9d41ba722da9e9f1a3b, type: 3}
 --- !u!1001 &2435282888665492685

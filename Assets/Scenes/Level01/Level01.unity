@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.056592476, g: 0.07460984, b: 0.11085617, a: 1}
+  m_IndirectSpecularColor: {r: 0.056424182, g: 0.074400656, b: 0.11060191, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5204,28 +5204,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1807130841 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2317791065025754747, guid: 73ea2a904120a9d41ba722da9e9f1a3b,
-    type: 3}
-  m_PrefabInstance: {fileID: 2317791065741621194}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1807130842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1807130841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d6566ceaa073c944b7d03f43819b2a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: FullScreenFadeAction
-  Fading: 0
-  Duration: 1
-  OnComplete: []
 --- !u!4 &1807130847 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2317791065025754744, guid: 73ea2a904120a9d41ba722da9e9f1a3b,
@@ -5934,26 +5912,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2317791065025754745, guid: 73ea2a904120a9d41ba722da9e9f1a3b,
-        type: 3}
-      propertyPath: DisableOnPlayFromHere
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3536433921149200747, guid: 73ea2a904120a9d41ba722da9e9f1a3b,
-        type: 3}
-      propertyPath: OnSpawn.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3536433921149200747, guid: 73ea2a904120a9d41ba722da9e9f1a3b,
-        type: 3}
-      propertyPath: OnSpawn.Array.data[0]
-      value: 
-      objectReference: {fileID: 1807130842}
-    - target: {fileID: 3536433921149200747, guid: 73ea2a904120a9d41ba722da9e9f1a3b,
-        type: 3}
-      propertyPath: RespawnDelay
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73ea2a904120a9d41ba722da9e9f1a3b, type: 3}
 --- !u!114 &2317791065741621195 stripped
@@ -5962,7 +5920,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2317791065741621194}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1807130841}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d69cd00f40343984eaf286a54b36348c, type: 3}

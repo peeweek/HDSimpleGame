@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 2317791065025754745}
   - component: {fileID: 600669375431565052}
   - component: {fileID: 3536433921149200747}
+  - component: {fileID: 2475693917722683894}
   m_Layer: 0
   m_Name: PlayerStart
   m_TagString: Untagged
@@ -187,21 +188,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FactoryBlueprints:
+  - {fileID: 4058827033085142571, guid: 21737acc81b68ce468c1e282b46118ee, type: 3}
   - {fileID: 7736126391550844290, guid: 5895bdc06e87471469f46a7ee99e66f8, type: 3}
   - {fileID: 9104699730684020217, guid: 0e1d2158978eb0445929074e27bc7a83, type: 3}
   - {fileID: 4385879626212579040, guid: b908e65e7735d0b4398af49ba04e85bd, type: 3}
-  - {fileID: 6331496943497071733, guid: 84f65c770b10d2d4fa24ae907d8c0837, type: 3}
   - {fileID: 3857017383874196181, guid: 45d94bd289e2f3c45b844f10c96da214, type: 3}
-  - {fileID: 4058827033085142571, guid: 21737acc81b68ce468c1e282b46118ee, type: 3}
+  blueprintSelecionMode: 3
+  gameSaveLocation: 1
+  gameSaveVariableName: PlayerType
+  defaultGameSaveIndex: 0
   SpawnTarget: {fileID: 2317791066096484690}
-  blueprintSelecionMode: 0
-  RespawnTarget: 1
   spawnLocation: 1
-  RespawnDelay: 3
+  RespawnTarget: 1
+  RespawnDelay: 1
   ReapInstancesOnDestroy: 1
   MaxInstances: 1
-  OnSpawn: []
+  OnSpawn:
+  - {fileID: 2475693917722683894}
   OnRespawn: []
+--- !u!114 &2475693917722683894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2317791065025754747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d6566ceaa073c944b7d03f43819b2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: FullScreenFadeAction
+  Fading: 0
+  Duration: 1
+  OnComplete: []
 --- !u!1 &2317791066096484690
 GameObject:
   m_ObjectHideFlags: 0
