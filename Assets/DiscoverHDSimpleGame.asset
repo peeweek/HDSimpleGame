@@ -29,27 +29,35 @@ MonoBehaviour:
 
 '
   Scenes:
-  - Title: Main Menu
-    Description: 'Main Menu is the level that lets you access the rest of the game.
+  - Title: Boot + Main Menu
+    Description: 'Boot is the scene that is loaded upon program startup, it displays
+      a timeline with credits only once.
+
+
+      Main Menu is the level that lets you access the rest of the game.
 
       This level contains a basic 3D Scene and menus to start, continue or quit the
       game.'
-    SceneSetup: {fileID: 0}
-    SingleScene: {fileID: 102900000, guid: ba8183f76f9f9b14eb5fa9af1d4b6d9c, type: 3}
+    SceneSetups: []
+    SingleScenes:
+    - {fileID: 102900000, guid: 534de5dbaaa2cb64aa71f332246cc4bf, type: 3}
+    - {fileID: 102900000, guid: ba8183f76f9f9b14eb5fa9af1d4b6d9c, type: 3}
   - Title: Level 01
     Description: "A Simple level that teaches gameplay controls. It contains only
       one scene with a player start, some platforms and a pickup to get some speed
       boost. \nThe goal is to reach the red flying dot at the end of the platform."
-    SceneSetup: {fileID: 0}
-    SingleScene: {fileID: 102900000, guid: d72adbe400d925f46ab837e1b4dc0d19, type: 3}
+    SceneSetups: []
+    SingleScenes:
+    - {fileID: 102900000, guid: d72adbe400d925f46ab837e1b4dc0d19, type: 3}
   - Title: Level 02
     Description: 'A level that showcases level scripting done with Gameplay Ingredients.
 
 
       It is not a challenging scene but instead an example of how to use things and
       how to factorize stuff in prefabs.'
-    SceneSetup: {fileID: 0}
-    SingleScene: {fileID: 102900000, guid: 9227420f393d0b94686d8a2bbf95bcd2, type: 3}
+    SceneSetups: []
+    SingleScenes:
+    - {fileID: 102900000, guid: 9227420f393d0b94686d8a2bbf95bcd2, type: 3}
   - Title: Level 03
     Description: 'A level with a streaming section. Showcases door systems and an
       elevator system.
@@ -57,6 +65,7 @@ MonoBehaviour:
 
       During the elevation, the bottom level is streamed out and a lightweight version
       (BG) is loaded.'
-    SceneSetup: {fileID: 11400000, guid: a172311334bac7946bde0efd416e1630, type: 2}
-    SingleScene: {fileID: 0}
+    SceneSetups:
+    - {fileID: 11400000, guid: a172311334bac7946bde0efd416e1630, type: 2}
+    SingleScenes: []
   Debug: 1

@@ -15,7 +15,12 @@ MonoBehaviour:
   ListName: Gameplay
   Templates:
   - Name: Default Robot Gameplay
-    Description: Default Robot Gameplay Scene. Includes a sky, ground and a PlayerStart
-      with Editor Script to send GAME_START event.
+    Description: 'Default Robot Gameplay Scene. Includes a sky, ground and a PlayerStart
+      with Editor Script to send a Gameplay Manager Level Start event.
+
+
+      The scene only embeds default post-processing and rendering settings so, please
+      remind to clone them in order to make your own profiles if you intend to change
+      them.'
     Scene: {fileID: 102900000, guid: b7f1b5acdf2e8564e8eaddb7705bfe00, type: 3}
     ScreenShot: {fileID: 2800000, guid: c07ce534c154bee43b519f80025127d6, type: 3}

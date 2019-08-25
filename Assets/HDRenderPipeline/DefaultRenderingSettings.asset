@@ -137,7 +137,6 @@ MonoBehaviour:
   meanHeight:
     m_OverrideState: 1
     m_Value: 30
-    min: 1
   anisotropy:
     m_OverrideState: 1
     m_Value: 0.6
@@ -213,8 +212,8 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 2
   skyAmbientMode:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1
   fogType:
     m_OverrideState: 1
     m_Value: 3
@@ -255,28 +254,47 @@ MonoBehaviour:
     m_Value: 0.5
     min: 0
     max: 4
-  thicknessModifier:
+  stepCount:
     m_OverrideState: 0
-    m_Value: 1
-    min: 1
-    max: 10
+    m_Value: 6
+    min: 2
+    max: 32
+  radius:
+    m_OverrideState: 0
+    m_Value: 2
+    min: 0.25
+    max: 5
+  fullResolution:
+    m_OverrideState: 0
+    m_Value: 0
+  maximumRadiusInPixels:
+    m_OverrideState: 0
+    m_Value: 40
+    min: 16
+    max: 256
   directLightingStrength:
     m_OverrideState: 0
     m_Value: 0
     min: 0
     max: 1
-  noiseFilterTolerance:
+  enableRaytracing:
     m_OverrideState: 0
     m_Value: 0
-    min: -8
-    max: 0
-  blurTolerance:
+  rayLength:
     m_OverrideState: 0
-    m_Value: -4.6
-    min: -8
-    max: 1
-  upsampleTolerance:
+    m_Value: 0.5
+    min: 0
+    max: 50
+  enableFilter:
     m_OverrideState: 0
-    m_Value: -12
-    min: -12
-    max: -1
+    m_Value: 0
+  numSamples:
+    m_OverrideState: 0
+    m_Value: 4
+    min: 1
+    max: 64
+  filterRadius:
+    m_OverrideState: 0
+    m_Value: 16
+    min: 1
+    max: 32
