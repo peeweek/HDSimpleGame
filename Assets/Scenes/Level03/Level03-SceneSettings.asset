@@ -110,7 +110,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   maxShadowDistance:
     m_OverrideState: 1
-    m_Value: 40
+    m_Value: 80
     min: 0
   cascadeShadowSplitCount:
     m_OverrideState: 1
@@ -242,10 +242,9 @@ MonoBehaviour:
   baseHeight:
     m_OverrideState: 1
     m_Value: 12
-  meanHeight:
+  maximumHeight:
     m_OverrideState: 1
-    m_Value: 22.7
-    min: 1
+    m_Value: 128
   anisotropy:
     m_OverrideState: 1
     m_Value: 0.8

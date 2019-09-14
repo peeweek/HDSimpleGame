@@ -1,6 +1,6 @@
 # HD Simple Game
 
-A Unity Robots Third Person Platformer Project, rendered with HDRP, for unity 2018.4 and 2019.1
+A Unity Robots Third Person Platformer Project, rendered with HDRP, compatible with unity 2018.4, 2019.1, 2019.2 and 2019.3
 
 [![HD Simple Game](https://img.youtube.com/vi/i3SzZEfs1Z4/0.jpg)](https://www.youtube.com/watch?v=i3SzZEfs1Z4)
 

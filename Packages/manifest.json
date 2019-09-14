@@ -1,19 +1,18 @@
 {
   "dependencies": {
     "com.unity.assetbundlebrowser": "1.7.0",
-    "com.unity.cinemachine": "2.3.4",
-    "com.unity.ide.rider": "1.0.8",
+    "com.unity.cinemachine": "2.3.5-preview.2",
+    "com.unity.ide.rider": "1.1.0",
     "com.unity.ide.vscode": "1.0.7",
-    "com.unity.package-manager-ui": "2.2.0",
-    "com.unity.probuilder": "4.0.5",
-    "com.unity.render-pipelines.high-definition": "6.9.1-preview",
-    "com.unity.timeline": "1.1.0",
+    "com.unity.probuilder": "4.1.0",
+    "com.unity.render-pipelines.high-definition": "7.0.1",
+    "com.unity.timeline": "1.2.1",
     "com.unity.ugui": "1.0.0",
-    "com.unity.visualeffectgraph": "6.9.1-preview",
-    "net.peeweek.build-frontend": "https://github.com/peeweek/net.peeweek.build-frontend.git#1.1.0-preview",
-    "net.peeweek.console": "https://github.com/peeweek/net.peeweek.console.git#1.1.0",
-    "net.peeweek.gameplay-ingredients": "https://github.com/peeweek/net.peeweek.gameplay-ingredients.git#2019.1.2",
-    "net.peeweek.third-person-controller": "https://github.com/peeweek/net.peeweek.third-person-controller.git#2019.1.0-preview",
+    "com.unity.visualeffectgraph": "7.0.1",
+    "net.peeweek.build-frontend": "file:D:/Unity/net.peeweek.build-frontend",
+    "net.peeweek.console": "file:D:/Unity/net.peeweek.console",
+    "net.peeweek.gameplay-ingredients": "file:D:/Unity/net.peeweek.gameplay-ingredients",
+    "net.peeweek.third-person-controller": "file:D:/Unity/net.peeweek.third-person-controller",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
@@ -46,23 +45,5 @@
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
   },
-  "registry": "https://staging-packages.unity.com",
-  "lock": {
-    "net.peeweek.build-frontend": {
-      "hash": "d8be24808bbb60a0d2a7b0234014a75e55ca90b6",
-      "revision": "1.1.0-preview"
-    },
-    "net.peeweek.console": {
-      "hash": "97c44ecfd1e1bbd68d2f1739a87e3d2014fa14fd",
-      "revision": "1.1.0"
-    },
-    "net.peeweek.gameplay-ingredients": {
-      "hash": "82a4615ae4c217c725836a9b494d55f4aa1b11d6",
-      "revision": "2019.1.2"
-    },
-    "net.peeweek.third-person-controller": {
-      "hash": "4f960d83d770f98f7dc2af387934b0aaeba120ef",
-      "revision": "2019.1.0-preview"
-    }
-  }
+  "registry": "https://staging-packages.unity.com"
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using ThirdPersonController;
 using GameplayIngredients.Pickup;
-using UnityEngine.Experimental.VFX;
+using UnityEngine.VFX;
 
 [RequireComponent(typeof(Character))]
 public class ThirdPersonPickupOwner : PickupOwnerBase

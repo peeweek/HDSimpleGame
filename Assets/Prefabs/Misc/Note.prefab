@@ -46,6 +46,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -138,6 +139,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -172,9 +174,9 @@ TextMesh:
   m_GameObject: {fileID: 2268463506798882827}
   m_Text: "Lorem Ipsum is simply dummy text of the\nprinting and typesetting industry.
     Lorem \nIpsum has been the industry's standard \ndummy text ever since the 1500s,
-    when \nan unknown printer took a galley of type \nand scrambled it to make a type
-    specimen \nbook. It has survived not only five centuries, \nbut also the leap
-    into electronic typesetting, \nremaining essentially unchanged."
+    when \nan unknown printer took a galley of type \nand scrambled it to make a
+    type specimen \nbook. It has survived not only five centuries, \nbut also the
+    leap into electronic typesetting, \nremaining essentially unchanged."
   m_OffsetZ: 0
   m_CharacterSize: 0.05
   m_LineSpacing: 1
@@ -236,9 +238,9 @@ MonoBehaviour:
   Title: Note Title
   Body: "Lorem Ipsum is simply dummy text of the\nprinting and typesetting industry.
     Lorem \nIpsum has been the industry's standard \ndummy text ever since the 1500s,
-    when \nan unknown printer took a galley of type \nand scrambled it to make a type
-    specimen \nbook. It has survived not only five centuries, \nbut also the leap
-    into electronic typesetting, \nremaining essentially unchanged."
+    when \nan unknown printer took a galley of type \nand scrambled it to make a
+    type specimen \nbook. It has survived not only five centuries, \nbut also the
+    leap into electronic typesetting, \nremaining essentially unchanged."
   TitleColor: {r: 1, g: 1, b: 1, a: 1}
   BodyColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   TitleTM: {fileID: 2268463505315117938}
