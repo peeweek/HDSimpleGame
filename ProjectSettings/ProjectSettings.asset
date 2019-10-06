@@ -3,7 +3,7 @@
 --- !u!129 &1
 PlayerSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 19
+  serializedVersion: 20
   productGUID: 9e15f52235c52cf48b9d709a73366419
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
@@ -91,7 +91,6 @@ PlayerSettings:
   xboxEnableFitness: 0
   visibleInBackground: 1
   allowFullscreenSwitch: 1
-  graphicsJobMode: 0
   fullscreenMode: 1
   xboxSpeechDB: 0
   xboxEnableHeadOrientation: 0
@@ -111,6 +110,7 @@ PlayerSettings:
   switchNVNShaderPoolsGranularity: 33554432
   switchNVNDefaultPoolsGranularity: 16777216
   switchNVNOtherPoolsGranularity: 16777216
+  vulkanNumSwapchainBuffers: 2
   vulkanEnableSetSRGBWrite: 0
   m_SupportedAspectRatios:
     4:3: 1
@@ -149,9 +149,10 @@ PlayerSettings:
       sharedDepthBuffer: 1
       dashSupport: 1
       lowOverheadMode: 0
+      protectedContext: 0
+      v2Signing: 1
     enable360StereoCapture: 0
   isWsaHolographicRemotingEnabled: 0
-  protectGraphicsMemory: 0
   enableFrameTimingStats: 0
   useHDRDisplay: 0
   D3DHDRBitDepth: 0
@@ -323,6 +324,11 @@ PlayerSettings:
     m_GraphicsJobs: 0
   - m_BuildTarget: WebGLSupport
     m_GraphicsJobs: 0
+  m_BuildTargetGraphicsJobMode:
+  - m_BuildTarget: PS4Player
+    m_GraphicsJobMode: 0
+  - m_BuildTarget: XboxOnePlayer
+    m_GraphicsJobMode: 0
   m_BuildTargetGraphicsAPIs:
   - m_BuildTarget: AndroidPlayer
     m_APIs: 0b00000008000000

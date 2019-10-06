@@ -76,80 +76,6 @@ MonoBehaviour:
   enableSunDisk:
     m_OverrideState: 1
     m_Value: 0
---- !u!114 &-5636555292627806996
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29b00527f85bb3346a4d2cb710971587, type: 3}
-  m_Name: VolumetricFog
-  m_EditorClassIdentifier: 
-  active: 1
-  m_AdvancedMode: 0
-  colorMode:
-    m_OverrideState: 0
-    m_Value: 1
-  color:
-    m_OverrideState: 0
-    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    hdr: 1
-    showAlpha: 0
-    showEyeDropper: 1
-  density:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-    max: 1
-  maxFogDistance:
-    m_OverrideState: 0
-    m_Value: 5000
-    min: 0
-  mipFogMaxMip:
-    m_OverrideState: 0
-    m_Value: 0.5
-    min: 0
-    max: 1
-  mipFogNear:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-  mipFogFar:
-    m_OverrideState: 0
-    m_Value: 1000
-    min: 0
-  albedo:
-    m_OverrideState: 0
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
-    hdr: 0
-    showAlpha: 1
-    showEyeDropper: 1
-  meanFreePath:
-    m_OverrideState: 1
-    m_Value: 500
-    min: 1
-  baseHeight:
-    m_OverrideState: 0
-    m_Value: 0
-  meanHeight:
-    m_OverrideState: 1
-    m_Value: 30
-  anisotropy:
-    m_OverrideState: 1
-    m_Value: 0.6
-    min: -1
-    max: 1
-  globalLightProbeDimmer:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-    max: 1
-  enableDistantFog:
-    m_OverrideState: 1
-    m_Value: 1
 --- !u!114 &-3748703256905937253
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -232,9 +158,8 @@ MonoBehaviour:
   components:
   - {fileID: -3748703256905937253}
   - {fileID: -2962872181204505630}
-  - {fileID: -7408721133138034335}
-  - {fileID: -5636555292627806996}
   - {fileID: 6313922747869604399}
+  - {fileID: 6430448404551314340}
 --- !u!114 &6313922747869604399
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -249,11 +174,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   m_AdvancedMode: 0
+  rayTracing:
+    m_OverrideState: 0
+    m_Value: 0
   intensity:
     m_OverrideState: 1
     m_Value: 0.5
     min: 0
     max: 4
+  directLightingStrength:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 1
   stepCount:
     m_OverrideState: 0
     m_Value: 6
@@ -272,29 +205,102 @@ MonoBehaviour:
     m_Value: 40
     min: 16
     max: 256
-  directLightingStrength:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 1
-  enableRaytracing:
-    m_OverrideState: 0
-    m_Value: 0
   rayLength:
     m_OverrideState: 0
     m_Value: 0.5
     min: 0
     max: 50
-  enableFilter:
-    m_OverrideState: 0
-    m_Value: 0
-  numSamples:
+  sampleCount:
     m_OverrideState: 0
     m_Value: 4
     min: 1
     max: 64
-  filterRadius:
+  denoise:
     m_OverrideState: 0
-    m_Value: 16
+    m_Value: 0
+  denoiserRadius:
+    m_OverrideState: 0
+    m_Value: 0.5
+    min: 0.001
+    max: 1
+--- !u!114 &6430448404551314340
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 953beb541740ddc499d005ee80c9ff29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  enabled:
+    m_OverrideState: 1
+    m_Value: 1
+  colorMode:
+    m_OverrideState: 0
+    m_Value: 1
+  color:
+    m_OverrideState: 0
+    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    hdr: 1
+    showAlpha: 0
+    showEyeDropper: 1
+  maxFogDistance:
+    m_OverrideState: 0
+    m_Value: 5000
+    min: 0
+  mipFogMaxMip:
+    m_OverrideState: 0
+    m_Value: 0.5
+    min: 0
+    max: 1
+  mipFogNear:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+  mipFogFar:
+    m_OverrideState: 0
+    m_Value: 1000
+    min: 0
+  baseHeight:
+    m_OverrideState: 0
+    m_Value: 0
+  maximumHeight:
+    m_OverrideState: 0
+    m_Value: 50
+  albedo:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    hdr: 0
+    showAlpha: 1
+    showEyeDropper: 1
+  meanFreePath:
+    m_OverrideState: 1
+    m_Value: 500
     min: 1
-    max: 32
+  enableVolumetricFog:
+    m_OverrideState: 1
+    m_Value: 1
+  anisotropy:
+    m_OverrideState: 1
+    m_Value: 0.6
+    min: -1
+    max: 1
+  globalLightProbeDimmer:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  depthExtent:
+    m_OverrideState: 0
+    m_Value: 64
+    min: 0.1
+  sliceDistributionUniformity:
+    m_OverrideState: 0
+    m_Value: 0.75
+    min: 0
+    max: 1
