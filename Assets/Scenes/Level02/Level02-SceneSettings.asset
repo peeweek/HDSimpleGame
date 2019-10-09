@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 1
-  m_AdvancedMode: 0
+  m_AdvancedMode: 1
   enabled:
     m_OverrideState: 1
     m_Value: 1
@@ -45,10 +45,10 @@ MonoBehaviour:
     min: 0
   baseHeight:
     m_OverrideState: 1
-    m_Value: 12
+    m_Value: 0.3
   maximumHeight:
     m_OverrideState: 1
-    m_Value: 94.52
+    m_Value: 90
   albedo:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
@@ -57,7 +57,7 @@ MonoBehaviour:
     showEyeDropper: 1
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 180
+    m_Value: 120
     min: 1
   enableVolumetricFog:
     m_OverrideState: 1
@@ -74,7 +74,7 @@ MonoBehaviour:
     max: 1
   depthExtent:
     m_OverrideState: 1
-    m_Value: 32
+    m_Value: 64
     min: 0.1
   sliceDistributionUniformity:
     m_OverrideState: 0
