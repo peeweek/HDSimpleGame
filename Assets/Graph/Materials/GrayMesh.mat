@@ -21,12 +21,12 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: GrayMesh
-  m_Shader: {fileID: 4800000, guid: acb11588034f817448a5f3c11f5b5d59, type: 3}
-  m_ShaderKeywords: _NORMALMAP_TANGENT_SPACE
+  m_Shader: {fileID: 4800000, guid: 00500b30088edaa4b814e23bb68f29f0, type: 3}
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap:
     MotionVector: User
   disabledShaderPasses:
@@ -38,6 +38,18 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - BaseColorMap:
+        m_Texture: {fileID: 2800000, guid: 688581a64fc903e468a184429dddedca, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - NormalMap:
+        m_Texture: {fileID: 2800000, guid: 8bcfe5e8be9dda347bd49aa95590f1ef, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - SmoothnessMap:
+        m_Texture: {fileID: 2800000, guid: c9e863aa8ae38014c892c491efc8c685, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -123,6 +135,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - TextureWorldSize: 7
     - Vector1_D557154: 0
     - _AORemapMax: 1
     - _AORemapMin: 0
@@ -222,11 +235,11 @@ Material:
     - _StencilRefDistortionVec: 64
     - _StencilRefGBuffer: 2
     - _StencilRefMV: 128
-    - _StencilWriteMask: 7
-    - _StencilWriteMaskDepth: 32
+    - _StencilWriteMask: 3
+    - _StencilWriteMaskDepth: 48
     - _StencilWriteMaskDistortionVec: 64
-    - _StencilWriteMaskGBuffer: 3
-    - _StencilWriteMaskMV: 128
+    - _StencilWriteMaskGBuffer: 51
+    - _StencilWriteMaskMV: 176
     - _Stiffness: 1
     - _SubsurfaceMask: 1
     - _SupportDecals: 1
@@ -253,8 +266,8 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - Color_522F24AE: {r: 0.28301886, g: 0.28301886, b: 0.28301886, a: 1}
-    - Color_F8B1D539: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 0}
+    - Color_522F24AE: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
+    - Color_F8B1D539: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0}
     - _BaseColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 1}
     - _Color: {r: 0.37735847, g: 0.37735847, b: 0.37735847, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}

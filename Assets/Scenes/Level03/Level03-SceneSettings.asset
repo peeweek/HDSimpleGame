@@ -22,13 +22,13 @@ MonoBehaviour:
     m_Value: 0
   color:
     m_OverrideState: 1
-    m_Value: {r: 3469.553, g: 4754.5728, b: 6264.4707, a: 1}
+    m_Value: {r: 3405.302, g: 4658.1963, b: 6135.9688, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
   maxFogDistance:
     m_OverrideState: 1
-    m_Value: 5000
+    m_Value: 100
     min: 0
   mipFogMaxMip:
     m_OverrideState: 1
@@ -45,31 +45,31 @@ MonoBehaviour:
     min: 0
   baseHeight:
     m_OverrideState: 1
-    m_Value: 12
+    m_Value: 30
   maximumHeight:
     m_OverrideState: 1
     m_Value: 128
   albedo:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {r: 1, g: 1, b: 1, a: 1}
     hdr: 0
     showAlpha: 1
     showEyeDropper: 1
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 64
+    m_Value: 90
     min: 1
   enableVolumetricFog:
     m_OverrideState: 1
     m_Value: 1
   anisotropy:
     m_OverrideState: 1
-    m_Value: 0.8
+    m_Value: 0.6
     min: -1
     max: 1
   globalLightProbeDimmer:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.3
     min: 0
     max: 1
   depthExtent:
@@ -190,7 +190,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   maxShadowDistance:
     m_OverrideState: 1
-    m_Value: 80
+    m_Value: 100
     min: 0
   cascadeShadowSplitCount:
     m_OverrideState: 1
@@ -199,13 +199,13 @@ MonoBehaviour:
     max: 4
   cascadeShadowSplit0:
     m_OverrideState: 1
-    m_Value: 0.073750004
+    m_Value: 0.051650584
   cascadeShadowSplit1:
     m_OverrideState: 1
-    m_Value: 0.3
+    m_Value: 0.25303885
   cascadeShadowSplit2:
     m_OverrideState: 1
-    m_Value: 0.61875
+    m_Value: 0.5693424
   cascadeShadowBorder0:
     m_OverrideState: 1
     m_Value: 0
