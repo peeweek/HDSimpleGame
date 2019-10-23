@@ -440,6 +440,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7718363718102041275}
     m_Modifications:
+    - target: {fileID: 725766788013283684, guid: fd9296f73dfee8c4493574c6b6009976,
+        type: 3}
+      propertyPath: m_Name
+      value: Elevator_Wall_Group
+      objectReference: {fileID: 0}
+    - target: {fileID: 725766788013283684, guid: fd9296f73dfee8c4493574c6b6009976,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1505523352923727329, guid: fd9296f73dfee8c4493574c6b6009976,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -493,16 +503,6 @@ PrefabInstance:
     - target: {fileID: 1505523352923727329, guid: fd9296f73dfee8c4493574c6b6009976,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 725766788013283684, guid: fd9296f73dfee8c4493574c6b6009976,
-        type: 3}
-      propertyPath: m_Name
-      value: Elevator_Wall_Group
-      objectReference: {fileID: 0}
-    - target: {fileID: 725766788013283684, guid: fd9296f73dfee8c4493574c6b6009976,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1821161626288002050, guid: fd9296f73dfee8c4493574c6b6009976,

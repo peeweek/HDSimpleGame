@@ -57,8 +57,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75510bef0e49d8e4ea339b95845f15de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnterMaxCount: 0
-  ExitMaxCount: 0
   onTriggerEnter:
   - {fileID: 4752709068952480211}
   onTriggerExit:
@@ -72,16 +70,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6344269940498746802, guid: 26153be303e072e4496539fba445aa27,
-        type: 3}
-      propertyPath: m_Name
-      value: WallDoorSingle_4x3_Trigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 6344269940498746802, guid: 26153be303e072e4496539fba445aa27,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 6344269940498746761, guid: 26153be303e072e4496539fba445aa27,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -136,6 +124,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344269940498746802, guid: 26153be303e072e4496539fba445aa27,
+        type: 3}
+      propertyPath: m_Name
+      value: WallDoorSingle_4x3_Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344269940498746802, guid: 26153be303e072e4496539fba445aa27,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2580815093705152511, guid: 26153be303e072e4496539fba445aa27,
         type: 3}
