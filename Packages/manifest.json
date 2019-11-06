@@ -1,19 +1,19 @@
 {
   "dependencies": {
     "com.unity.assetbundlebrowser": "1.7.0",
-    "com.unity.cinemachine": "2.3.5-preview.2",
+    "com.unity.cinemachine": "2.4.0-preview.4",
     "com.unity.ide.rider": "1.1.0",
     "com.unity.ide.vscode": "1.1.2",
     "com.unity.probuilder": "4.1.0",
     "com.unity.render-pipelines.high-definition": "7.1.1",
-    "com.unity.timeline": "1.2.2",
+    "com.unity.timeline": "1.2.4",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualeffectgraph": "7.1.1",
-    "li.lightingtools.lightprobesvolumes": "https://github.com/laurenth-unity/LightingTools.LightProbesVolumes.git",
-    "net.peeweek.build-frontend": "file:D:/Unity/net.peeweek.build-frontend",
-    "net.peeweek.console": "file:D:/Unity/net.peeweek.console",
-    "net.peeweek.gameplay-ingredients": "file:D:/Unity/net.peeweek.gameplay-ingredients",
-    "net.peeweek.third-person-controller": "file:D:/Unity/net.peeweek.third-person-controller",
+    "li.lightingtools.lightprobesvolumes": "file:../LocalPackages/LightingTools.LightProbesVolumes",
+    "net.peeweek.build-frontend": "file:../LocalPackages/net.peeweek.build-frontend",
+    "net.peeweek.console": "file:../LocalPackages/net.peeweek.console",
+    "net.peeweek.gameplay-ingredients": "file:../LocalPackages/net.peeweek.gameplay-ingredients",
+    "net.peeweek.third-person-controller": "file:../LocalPackages/net.peeweek.third-person-controller",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
@@ -45,12 +45,5 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  },
-  "registry": "https://staging-packages.unity.com",
-  "lock": {
-    "li.lightingtools.lightprobesvolumes": {
-      "revision": "HEAD",
-      "hash": "b5914d9328d32087020d49aec462852fcb8fab26"
-    }
   }
 }

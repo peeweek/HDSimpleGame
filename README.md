@@ -9,3 +9,8 @@ Uses open source libraries:
 * [Third Person Controller](https://github.com/peeweek/net.peeweek.third-person-controller) 
 * [Console](https://github.com/peeweek/net.peeweek.console) 
 * [Build Frontend](https://github.com/peeweek/net.peeweek.build-frontend)
+
+## How to Use
+
+1. Clone the repository
+2. Open the Project

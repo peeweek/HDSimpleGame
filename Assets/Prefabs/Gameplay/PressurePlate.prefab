@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1103099948847033953}
   - component: {fileID: 6882495436832427500}
   - component: {fileID: 6882495436832427499}
+  - component: {fileID: 525887902}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
@@ -62,6 +63,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onTriggerEnter:
   - {fileID: 1103099948847033953}
+  - {fileID: 525887902}
   onTriggerExit: []
   OnlyInteractWithTag: 1
   Tag: Player
@@ -114,6 +116,20 @@ MonoBehaviour:
   Name: Set Red
   StateMachine: {fileID: 6882495437982150237}
   m_State: State Red
+--- !u!114 &525887902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6882495436832427497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c68adda9532fd8043b281736d2a5fbcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Send PLATE_CHANGED
+  MessageToSend: PLATE_CHANGED
 --- !u!1 &6882495437529627467
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,7 +337,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6882495437982150236}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -540,6 +556,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6882495438449822144}
   - component: {fileID: 6882495438449822159}
+  - component: {fileID: 1485157829087056790}
   m_Layer: 0
   m_Name: State Red
   m_TagString: Untagged
@@ -575,9 +592,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcc3d684aff0c5b4290e088e4b8a735e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnStateEnter: []
+  OnStateEnter:
+  - {fileID: 1485157829087056790}
   OnStateExit: []
   OnStateUpdate: []
+--- !u!114 &1485157829087056790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6882495438449822158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74e258e1b854de4db77e924a4a2e459, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Set Global Pressure Plate
+  scope: 0
+  type: 1
+  Variable: PressurePlate0
+  boolValue: 1
+  intValue: 0
+  stringValue: Value
+  floatValue: 1
+  gameObjectValue: {fileID: 0}
 --- !u!1 &6882495438501944556
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,6 +765,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6882495438816721741}
   - component: {fileID: 6882495438816721740}
+  - component: {fileID: 819981521108408137}
   m_Layer: 0
   m_Name: State Green
   m_TagString: Untagged
@@ -761,9 +801,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcc3d684aff0c5b4290e088e4b8a735e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnStateEnter: []
+  OnStateEnter:
+  - {fileID: 819981521108408137}
   OnStateExit: []
   OnStateUpdate: []
+--- !u!114 &819981521108408137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6882495438816721739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74e258e1b854de4db77e924a4a2e459, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Set Global Pressure Plate
+  scope: 0
+  type: 1
+  Variable: PressurePlate0
+  boolValue: 1
+  intValue: 1
+  stringValue: Value
+  floatValue: 1
+  gameObjectValue: {fileID: 0}
 --- !u!1 &6882495438850125602
 GameObject:
   m_ObjectHideFlags: 0
