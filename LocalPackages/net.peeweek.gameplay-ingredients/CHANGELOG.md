@@ -1,5 +1,16 @@
 # Changelog
 
+## 2019.3.2
+
+#### Changed
+
+- **Delayed Logic** now has a mode that allows you to have a random delay within a range.
+- **Audio Play Clip Action** now allows you to randomize volume and pitch within a range of values every time you play the clip.
+
+#### Fixed
+
+- Fixed selection of Call tree window that became broken somehow in 2019.3.0f1
+
 ## 2019.3.1
 
 #### Changed
