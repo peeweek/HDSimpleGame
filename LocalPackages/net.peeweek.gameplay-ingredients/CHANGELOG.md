@@ -1,16 +1,40 @@
 # Changelog
 
-## 2019.3.2
+## 2019.3.4
 
 #### Added
+
+* Preferences for Advanced Hierarchy View
+* Added API to AdvancedHierarchyView to add other Icons from component types
+
+#### Changed
+
+* Renamed HierarchyHints to AdvancedHierarchyView + Changed behaviour to apply visibility from preferences
+
+## 2019.3.3
+
+#### Added
+
+- Added Counters : Integer counters stored in the scene
+- Added CounterAction and CounterLogic
 - Added Create State button to StateMachines
 - Added State Machine templates in the GameObject Creation Menu
 
 #### Changed
 
+- Messager now send messages through a copy of its source listeners array instead of the actual enumerator. This prevents from modifying the call array at the same frame if a OnMessageEvent becomes disabled during execution.
+- Changed SceneViewToolbar Accessibility (now public to give access to OnSceneViewToolbarGUI)
+
+#### Fixed
+
+- Fixes in changelog (bad changes in 2019.3.2)
+
+## 2019.3.2
+
+#### Changed
+
 - **Delayed Logic** now has a mode that allows you to have a random delay within a range.
 - **Audio Play Clip Action** now allows you to randomize volume and pitch within a range of values every time you play the clip.
-- Messager now send messages through a copy of its source listeners array instead of the actual enumerator. This prevents from modifying the call array at the same frame if a OnMessageEvent becomes disabled during execution.
 
 #### Fixed
 

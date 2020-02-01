@@ -111,6 +111,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - SmoothSteps: 2
     - Vector1_D557154: 0
     - _AORemapMax: 1
     - _AORemapMin: 0
@@ -123,7 +124,7 @@ Material:
     - _AlphaCutoffShadow: 0.5
     - _AlphaDstBlend: 0
     - _AlphaSrcBlend: 1
-    - _AlphaThreshold: 0.54
+    - _AlphaThreshold: 0.8
     - _Anisotropy: 0
     - _BlendMode: 0
     - _CoatMask: 0
@@ -200,7 +201,7 @@ Material:
     - _ShiverDirectionality: 0.5
     - _ShiverDrag: 0.2
     - _Smoothness: 0
-    - _Smoothness1: 0.68
+    - _Smoothness1: 0.7
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0
     - _SpecularAAScreenSpaceVariance: 0.1
