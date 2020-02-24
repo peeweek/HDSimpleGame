@@ -6,9 +6,11 @@
 
 * Preferences for Advanced Hierarchy View
 * Added API to AdvancedHierarchyView to add other Icons from component types
+* Help Menu links (github, documentation, openUPM)
 
 #### Changed
 
+* Game Save manager now saves to the Application.persistentDataPath folder
 * Renamed HierarchyHints to AdvancedHierarchyView + Changed behaviour to apply visibility from preferences
 
 ## 2019.3.3
