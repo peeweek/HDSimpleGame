@@ -990,6 +990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     StartMessage: PLAYER_WALK
+    Instigator: {fileID: 0}
 --- !u!114 &5248714235798489142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1004,6 +1005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     StartMessage: PLAYER_RELEASE
+    Instigator: {fileID: 0}
 --- !u!114 &7227614596398672407
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1018,3 +1020,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     StartMessage: PLAYER_FREEZE
+    Instigator: {fileID: 0}
