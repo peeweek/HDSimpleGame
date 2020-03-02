@@ -2,6 +2,11 @@
 
 ## 2019.3.4
 
+This version added the following package dependencies:
+
+* Cinemachine 2.5.0 
+* Timeline 1.3.0
+
 #### Added
 
 * Preferences for Advanced Hierarchy View
@@ -15,10 +20,12 @@
 * Game Save manager now saves to the Application.persistentDataPath folder
 * Renamed HierarchyHints to AdvancedHierarchyView + Changed behaviour to apply visibility from preferences
 * Managers: Adjusted RuntimeInitializeOnLoad for new Quick Enter Play Mode Settings
+* Updated Starter Packages for Built-in RP, HDRP and URP (removed LWRP)
 
 #### Fixed
 
 * Fixed FocusUIAction that did not update the focus of a button in certain conditions.
+* Fixed possible null in discover components
 
 ## 2019.3.3
 
