@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 3175.6135, g: 2387.3572, b: 2603.8457, a: 1}
+  m_IndirectSpecularColor: {r: 3968.0342, g: 4320.708, b: 5824.153, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -73,7 +73,7 @@ LightmapSettings:
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 0
-    m_BakeBackend: 2
+    m_BakeBackend: 1
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 16
     m_PVRSampleCount: 128
@@ -1079,7 +1079,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Intensity
-      value: 1470000
+      value: 980000
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -1104,7 +1104,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -1229,7 +1229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 9
+  m_Version: 10
   m_ObsoleteShadowResolutionTier: 1
   m_ObsoleteUseShadowQualitySettings: 0
   m_ObsoleteCustomShadowResolution: 512
@@ -1325,6 +1325,9 @@ MonoBehaviour:
   useVolumetric: 0
   featuresFoldout: 1
   showAdditionalSettings: 0
+  m_AreaLightEmissiveMeshShadowCastingMode: 0
+  m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
+  m_AreaLightEmissiveMeshLayer: -1
 --- !u!108 &147710860
 Light:
   m_ObjectHideFlags: 0
@@ -1792,7 +1795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 9
+  m_Version: 10
   m_ObsoleteShadowResolutionTier: 1
   m_ObsoleteUseShadowQualitySettings: 0
   m_ObsoleteCustomShadowResolution: 512
@@ -1888,6 +1891,9 @@ MonoBehaviour:
   useVolumetric: 0
   featuresFoldout: 1
   showAdditionalSettings: 0
+  m_AreaLightEmissiveMeshShadowCastingMode: 0
+  m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
+  m_AreaLightEmissiveMeshLayer: -1
 --- !u!108 &169792318
 Light:
   m_ObjectHideFlags: 0
@@ -1979,7 +1985,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 80000
+  m_Intensity: 100000
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2054,7 +2060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 9
+  m_Version: 10
   m_ObsoleteShadowResolutionTier: 1
   m_ObsoleteUseShadowQualitySettings: 0
   m_ObsoleteCustomShadowResolution: 1024
@@ -2062,7 +2068,7 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 80000
+  m_Intensity: 100000
   m_EnableSpotReflector: 0
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -2150,6 +2156,9 @@ MonoBehaviour:
   useVolumetric: 1
   featuresFoldout: 1
   showAdditionalSettings: 0
+  m_AreaLightEmissiveMeshShadowCastingMode: 0
+  m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
+  m_AreaLightEmissiveMeshLayer: -1
 --- !u!114 &174240356 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4984209240792721852, guid: 36325545403488e4f80fc01da8e69805,
@@ -2400,7 +2409,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Intensity
-      value: 1470000
+      value: 980000
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -2425,7 +2434,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -4115,7 +4124,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Intensity
-      value: 1470000
+      value: 980000
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -4130,7 +4139,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -4221,7 +4230,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Intensity
-      value: 1470000
+      value: 980000
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -4236,7 +4245,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -6072,7 +6081,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Intensity
-      value: 1470000
+      value: 980000
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -6087,7 +6096,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -7265,7 +7274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 9
+  m_Version: 10
   m_ObsoleteShadowResolutionTier: 1
   m_ObsoleteUseShadowQualitySettings: 0
   m_ObsoleteCustomShadowResolution: 512
@@ -7361,6 +7370,9 @@ MonoBehaviour:
   useVolumetric: 0
   featuresFoldout: 1
   showAdditionalSettings: 0
+  m_AreaLightEmissiveMeshShadowCastingMode: 0
+  m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
+  m_AreaLightEmissiveMeshLayer: -1
 --- !u!108 &525677606
 Light:
   m_ObjectHideFlags: 0
@@ -7691,7 +7703,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -7787,7 +7799,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Intensity
-      value: 1470000
+      value: 980000
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -7807,7 +7819,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -7924,12 +7936,12 @@ PrefabInstance:
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Intensity
-      value: 1470000
+      value: 980000
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -8736,7 +8748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 9
+  m_Version: 10
   m_ObsoleteShadowResolutionTier: 1
   m_ObsoleteUseShadowQualitySettings: 0
   m_ObsoleteCustomShadowResolution: 512
@@ -8832,6 +8844,9 @@ MonoBehaviour:
   useVolumetric: 1
   featuresFoldout: 1
   showAdditionalSettings: 0
+  m_AreaLightEmissiveMeshShadowCastingMode: 0
+  m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
+  m_AreaLightEmissiveMeshLayer: -1
 --- !u!108 &655881206
 Light:
   m_ObjectHideFlags: 0
@@ -9310,7 +9325,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Intensity
-      value: 1470000
+      value: 980000
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -9320,7 +9335,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -10550,7 +10565,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Intensity
-      value: 1470000
+      value: 980000
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -10575,7 +10590,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -12121,7 +12136,7 @@ PrefabInstance:
     - target: {fileID: 9126506093938451425, guid: 36325545403488e4f80fc01da8e69805,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9126506093938451425, guid: 36325545403488e4f80fc01da8e69805,
         type: 3}
@@ -12212,12 +12227,12 @@ PrefabInstance:
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Intensity
-      value: 1470000
+      value: 980000
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -12618,7 +12633,7 @@ PrefabInstance:
     - target: {fileID: 5963871645729240846, guid: 652bc2d49128d654fb393b8b9bdc3fba,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5963871645729240846, guid: 652bc2d49128d654fb393b8b9bdc3fba,
         type: 3}
@@ -12907,9 +12922,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Profile: {fileID: 11400000, guid: 84ff7163c15abf046a36923045106e09, type: 2}
   m_StaticLightingSkyUniqueID: 4
-  m_SkySettings: {fileID: 1277176165}
-  m_SkySettingsFromProfile: {fileID: 2003882269309121642, guid: 84ff7163c15abf046a36923045106e09,
-    type: 2}
 --- !u!4 &898876870
 Transform:
   m_ObjectHideFlags: 1
@@ -14611,7 +14623,7 @@ PrefabInstance:
     - target: {fileID: 2126992841496996717, guid: 7e06bcc92cb2e0b4889671ea5a57e0ad,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2126992841496996717, guid: 7e06bcc92cb2e0b4889671ea5a57e0ad,
         type: 3}
@@ -14701,7 +14713,7 @@ PrefabInstance:
     - target: {fileID: 7244069464177666980, guid: 7e06bcc92cb2e0b4889671ea5a57e0ad,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7244069464177666980, guid: 7e06bcc92cb2e0b4889671ea5a57e0ad,
         type: 3}
@@ -15348,7 +15360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 9
+  m_Version: 10
   m_ObsoleteShadowResolutionTier: 1
   m_ObsoleteUseShadowQualitySettings: 0
   m_ObsoleteCustomShadowResolution: 512
@@ -15444,6 +15456,9 @@ MonoBehaviour:
   useVolumetric: 0
   featuresFoldout: 1
   showAdditionalSettings: 0
+  m_AreaLightEmissiveMeshShadowCastingMode: 0
+  m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
+  m_AreaLightEmissiveMeshLayer: -1
 --- !u!108 &1082589466
 Light:
   m_ObjectHideFlags: 0
@@ -15656,12 +15671,12 @@ PrefabInstance:
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Intensity
-      value: 1470000
+      value: 980000
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -17163,7 +17178,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Intensity
-      value: 1470000
+      value: 980000
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -17173,7 +17188,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -18200,182 +18215,6 @@ MonoBehaviour:
   Name: OnSpawn
   Calls:
   - {fileID: 1270097660}
---- !u!114 &1277176165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d877ec3e844f2ca46830012e8e79319b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 1
-  m_AdvancedMode: 0
-  rotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  skyIntensityMode:
-    m_OverrideState: 0
-    m_Value: 0
-  exposure:
-    m_OverrideState: 0
-    m_Value: 0
-  multiplier:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-  upperHemisphereLuxValue:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-  upperHemisphereLuxColor:
-    m_OverrideState: 0
-    m_Value: {x: 0, y: 0, z: 0}
-  desiredLuxValue:
-    m_OverrideState: 0
-    m_Value: 20000
-  updateMode:
-    m_OverrideState: 0
-    m_Value: 0
-  updatePeriod:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-  includeSunInBaking:
-    m_OverrideState: 0
-    m_Value: 0
-  earthPreset:
-    m_OverrideState: 0
-    m_Value: 1
-  sphericalMode:
-    m_OverrideState: 0
-    m_Value: 1
-  seaLevel:
-    m_OverrideState: 0
-    m_Value: 0
-  planetaryRadius:
-    m_OverrideState: 0
-    m_Value: 6378100
-    min: 0
-  planetCenterPosition:
-    m_OverrideState: 0
-    m_Value: {x: 0, y: -6378100, z: 0}
-  airDensityR:
-    m_OverrideState: 0
-    m_Value: 0.04534
-    min: 0
-    max: 1
-  airDensityG:
-    m_OverrideState: 0
-    m_Value: 0.10237241
-    min: 0
-    max: 1
-  airDensityB:
-    m_OverrideState: 0
-    m_Value: 0.23264056
-    min: 0
-    max: 1
-  airTint:
-    m_OverrideState: 0
-    m_Value: {r: 0.9, g: 0.9, b: 1, a: 1}
-    hdr: 0
-    showAlpha: 0
-    showEyeDropper: 1
-  airMaximumAltitude:
-    m_OverrideState: 0
-    m_Value: 55261.973
-    min: 0
-  aerosolDensity:
-    m_OverrideState: 0
-    m_Value: 0.01192826
-    min: 0
-    max: 1
-  aerosolTint:
-    m_OverrideState: 0
-    m_Value: {r: 0.9, g: 0.9, b: 0.9, a: 1}
-    hdr: 0
-    showAlpha: 0
-    showEyeDropper: 1
-  aerosolMaximumAltitude:
-    m_OverrideState: 0
-    m_Value: 8289.296
-    min: 0
-  aerosolAnisotropy:
-    m_OverrideState: 0
-    m_Value: 0
-    min: -1
-    max: 1
-  numberOfBounces:
-    m_OverrideState: 0
-    m_Value: 8
-    min: 1
-    max: 10
-  groundTint:
-    m_OverrideState: 0
-    m_Value: {r: 0.4, g: 0.25, b: 0.15, a: 1}
-    hdr: 0
-    showAlpha: 0
-    showEyeDropper: 0
-  groundColorTexture:
-    m_OverrideState: 0
-    m_Value: {fileID: 0}
-  groundEmissionTexture:
-    m_OverrideState: 0
-    m_Value: {fileID: 0}
-  groundEmissionMultiplier:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-  planetRotation:
-    m_OverrideState: 0
-    m_Value: {x: 0, y: 0, z: 0}
-  spaceEmissionTexture:
-    m_OverrideState: 0
-    m_Value: {fileID: 0}
-  spaceEmissionMultiplier:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-  spaceRotation:
-    m_OverrideState: 0
-    m_Value: {x: 0, y: 0, z: 0}
-  colorSaturation:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-    max: 1
-  alphaSaturation:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-    max: 1
-  alphaMultiplier:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-    max: 1
-  horizonTint:
-    m_OverrideState: 0
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
-    hdr: 0
-    showAlpha: 0
-    showEyeDropper: 0
-  zenithTint:
-    m_OverrideState: 0
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
-    hdr: 0
-    showAlpha: 0
-    showEyeDropper: 0
-  horizonZenithShift:
-    m_OverrideState: 0
-    m_Value: 0
-    min: -1
-    max: 1
 --- !u!1 &1282338462
 GameObject:
   m_ObjectHideFlags: 0
@@ -18419,9 +18258,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1282338465
 MeshRenderer:
@@ -19296,7 +19135,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Intensity
-      value: 1470000
+      value: 980000
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -19306,7 +19145,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -21119,7 +20958,7 @@ PrefabInstance:
     - target: {fileID: 9126506093938451425, guid: 36325545403488e4f80fc01da8e69805,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9126506093938451425, guid: 36325545403488e4f80fc01da8e69805,
         type: 3}
@@ -22833,7 +22672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 9
+  m_Version: 10
   m_ObsoleteShadowResolutionTier: 1
   m_ObsoleteUseShadowQualitySettings: 0
   m_ObsoleteCustomShadowResolution: 512
@@ -22929,6 +22768,9 @@ MonoBehaviour:
   useVolumetric: 1
   featuresFoldout: 1
   showAdditionalSettings: 0
+  m_AreaLightEmissiveMeshShadowCastingMode: 0
+  m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
+  m_AreaLightEmissiveMeshLayer: -1
 --- !u!108 &1790006122
 Light:
   m_ObjectHideFlags: 0
@@ -23436,18 +23278,13 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
-      propertyPath: m_BoundingSphereOverride.y
-      value: 2.3510647e-38
+      propertyPath: m_ShadowRadius
+      value: 0.06
       objectReference: {fileID: 0}
-    - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
+    - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
-      propertyPath: m_Version
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
-        type: 3}
-      propertyPath: m_MinFilterSize
-      value: 0.01
+      propertyPath: m_Intensity
+      value: 980000
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532447569176, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -23765,7 +23602,7 @@ PrefabInstance:
     - target: {fileID: 9126506093938451425, guid: 36325545403488e4f80fc01da8e69805,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9126506093938451425, guid: 36325545403488e4f80fc01da8e69805,
         type: 3}
@@ -24145,7 +23982,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Intensity
-      value: 1470000
+      value: 980000
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -24170,7 +24007,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -25269,7 +25106,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Intensity
-      value: 1470000
+      value: 980000
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -25279,7 +25116,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -26001,7 +25838,7 @@ PrefabInstance:
     - target: {fileID: 2126992841496996717, guid: e1c62a5f7a02580479257091d59280cd,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2126992841496996717, guid: e1c62a5f7a02580479257091d59280cd,
         type: 3}
@@ -26081,7 +25918,7 @@ PrefabInstance:
     - target: {fileID: 7244069464177666980, guid: e1c62a5f7a02580479257091d59280cd,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7244069464177666980, guid: e1c62a5f7a02580479257091d59280cd,
         type: 3}
@@ -27108,9 +26945,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &5864533986908813619
 MeshRenderer:
@@ -27449,7 +27286,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Intensity
-      value: 1470000
+      value: 980000
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881085, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
@@ -27469,7 +27306,7 @@ PrefabInstance:
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
       propertyPath: m_Version
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8802177532005881086, guid: b55d0f04cbea9fd40a0845bf36dacfb5,
         type: 3}
