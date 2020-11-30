@@ -349,5 +349,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2a3216a4b5687ac4eb2388159959a743, type: 2}
   - {fileID: 11400000, guid: afb5435e0a44b4d43941cf1963cf0bec, type: 2}
   beforeTransparentCustomPostProcesses: []
-  beforePostProcessCustomPostProcesses: []
+  beforePostProcessCustomPostProcesses:
+  - ColorStrokes, net.peeweek.color-strokes, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   afterPostProcessCustomPostProcesses: []
