@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 56271203771655331}
   - component: {fileID: 2236288809744505543}
-  - component: {fileID: 5601277514729481102}
+  - component: {fileID: 336031176915240218}
   m_Layer: 0
   m_Name: State Closed
   m_TagString: Untagged
@@ -45,10 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OnStateEnter:
-  - {fileID: 5601277514729481102}
+  - {fileID: 336031176915240218}
   OnStateExit: []
   OnStateUpdate: []
---- !u!114 &5601277514729481102
+--- !u!114 &336031176915240218
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -57,24 +57,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 917265278416264444}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0e98867b2173494983582dfb1a01d0b, type: 3}
+  m_Script: {fileID: 11500000, guid: c624e292717b5c6409faa3fc3350cde9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Door_Close
-  OnExecute:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8446004630390809299}
-        m_MethodName: SetTarget
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8446004630117016165}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  Name: Door_Closed
+  reachPositionRig: {fileID: 8446004630390809299}
+  target: {fileID: 8446004630117016165}
+  UseInstigatorAsTarget: 0
 --- !u!1 &8446004628740290321
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,7 +156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8446004629692809765}
   - component: {fileID: 4462169766929678759}
-  - component: {fileID: 8446004629692809762}
+  - component: {fileID: 6237690634304122748}
   m_Layer: 0
   m_Name: State Open
   m_TagString: Untagged
@@ -202,10 +191,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OnStateEnter:
-  - {fileID: 8446004629692809762}
+  - {fileID: 6237690634304122748}
   OnStateExit: []
   OnStateUpdate: []
---- !u!114 &8446004629692809762
+--- !u!114 &6237690634304122748
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -214,24 +203,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8446004629692809764}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0e98867b2173494983582dfb1a01d0b, type: 3}
+  m_Script: {fileID: 11500000, guid: c624e292717b5c6409faa3fc3350cde9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Door_Open
-  OnExecute:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8446004630390809299}
-        m_MethodName: SetTarget
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8446004629584129165}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  reachPositionRig: {fileID: 8446004630390809299}
+  target: {fileID: 8446004629584129165}
+  UseInstigatorAsTarget: 0
 --- !u!1 &8446004630117016164
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,6 +297,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -343,6 +322,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &8446004630390809300
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -368,8 +348,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b9918e021cd6a4bb3acd7bf43cb3d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_UpdateMode: 0
+  m_RigPriority: 0
   m_Target: {fileID: 8446004630117016165}
   Dampen: 5
   MaximumVelocity: 5
+  inLocalSpace: 0
   OnReachPosition: []
   ReachSnapDistance: 0.01
