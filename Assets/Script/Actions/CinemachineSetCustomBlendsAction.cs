@@ -3,6 +3,7 @@ using Cinemachine;
 
 namespace GameplayIngredients.Actions
 {
+    [Callable("HDSimpleGame", "Misc/ic-callable.png")]
     public class CinemachineSetCustomBlendsAction : ActionBase
     {
         public enum Action

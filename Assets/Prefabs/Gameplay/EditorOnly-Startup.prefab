@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5b32278809154e47b5d8375352f6f8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: EditorOnlyLogic
+  Name: If EditorOnly (Not Play From Here)
   DisableOnPlayFromHere: 1
   ExecutionPath: 1
   OnExecute:
@@ -76,5 +76,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15ae69d69e7aeaf4fbfb02e7175ed5f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: GameManagerSendStartupMessageAction
+  Name: 'Game Manager Send : GameLevelStart'
   messageType: 1
