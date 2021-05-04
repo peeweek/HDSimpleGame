@@ -1257,6 +1257,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6250001660253533341}
   - component: {fileID: 4931830584097669066}
+  - component: {fileID: 6300175744225899093}
   - component: {fileID: 4377808368045108145}
   - component: {fileID: 7936329347477506756}
   m_Layer: 0
@@ -1288,7 +1289,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6250001660253533342}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05f246f96cd54614b8232876837d4746, type: 3}
   m_Name: 
@@ -1298,6 +1299,45 @@ MonoBehaviour:
   - {fileID: 4377808368045108145}
   - {fileID: 7936329347477506756}
   OnButtonUp: []
+--- !u!114 &6300175744225899093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6250001660253533342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ebdd020f382b24d91e934683a756de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputAction:
+    m_Name: Input
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: c264c229-ed87-420b-b68c-bf34961279cd
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 2357938f-c98e-42dd-aa23-fbad123c3ce7
+      m_Path: <Gamepad>/start
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 9ab70e0d-c017-4c4e-8b7f-c095d25b0984
+      m_Path: <Keyboard>/escape
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 0
+  onButtonDown:
+  - {fileID: 4377808368045108145}
+  - {fileID: 7936329347477506756}
 --- !u!114 &4377808368045108145
 MonoBehaviour:
   m_ObjectHideFlags: 0
