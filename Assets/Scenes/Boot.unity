@@ -43,7 +43,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -99,7 +99,8 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: cd468bfc5a16daf4bab829346e814bc8,
     type: 2}
-  m_UseShadowmask: 1
+  m_LightingSettings: {fileID: 4890085278179872738, guid: cd2b67a0b71628341b2dbfc5246cfcb7,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -119,6 +120,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
@@ -194,6 +197,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.745283, g: 0.745283, b: 0.745283, a: 0}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -383,8 +388,6 @@ PlayableDirector:
     value: {fileID: 261060860}
   - key: {fileID: 114760926682278578, guid: 903c46eecb63c0748b23b05b1a68db77, type: 2}
     value: {fileID: 774896123}
-  - key: {fileID: 114416267282512226, guid: 903c46eecb63c0748b23b05b1a68db77, type: 2}
-    value: {fileID: 0}
   - key: {fileID: 114100003754730542, guid: 903c46eecb63c0748b23b05b1a68db77, type: 2}
     value: {fileID: 1632072643}
   - key: {fileID: 114500000280497410, guid: 903c46eecb63c0748b23b05b1a68db77, type: 2}
@@ -454,11 +457,12 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1280, y: 720}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
 --- !u!1 &774896119
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,6 +517,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.745283, g: 0.745283, b: 0.745283, a: 0}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -571,6 +577,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1269128413}
+  - component: {fileID: 1269128417}
+  - component: {fileID: 1269128418}
   - component: {fileID: 1269128416}
   - component: {fileID: 1269128415}
   - component: {fileID: 1269128414}
@@ -612,7 +620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c68adda9532fd8043b281736d2a5fbcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: SendMessageAction
+  Name: 'Send Message : ''BOOT_COMPLETE'''
   MessageToSend: BOOT_COMPLETE
 --- !u!114 &1269128415
 MonoBehaviour:
@@ -626,11 +634,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0e98867b2173494983582dfb1a01d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: UnityEventAction
+  Name: Call UnityEvent(s)
   OnExecute:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 261060861}
+        m_TargetAssemblyTypeName: 
         m_MethodName: Stop
         m_Mode: 1
         m_Arguments:
@@ -648,7 +657,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269128412}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05f246f96cd54614b8232876837d4746, type: 3}
   m_Name: 
@@ -658,6 +667,46 @@ MonoBehaviour:
   - {fileID: 1269128415}
   - {fileID: 1269128414}
   OnButtonUp: []
+--- !u!114 &1269128417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269128412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0fbeef9c1898b4db7f310ff70c014a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  device: 1
+  mouseButton: 0
+  gamepadButton: 0
+  keyboardKey: 60
+  onPressed:
+  - {fileID: 1269128415}
+  - {fileID: 1269128414}
+  onReleased: []
+--- !u!114 &1269128418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269128412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0fbeef9c1898b4db7f310ff70c014a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  device: 0
+  mouseButton: 0
+  gamepadButton: 10
+  keyboardKey: 60
+  onPressed:
+  - {fileID: 1269128415}
+  - {fileID: 1269128414}
+  onReleased: []
 --- !u!1 &1369863870
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,6 +785,7 @@ MonoBehaviour:
   Name: FullScreenFadeAction
   Fading: 1
   Duration: 0
+  fadeTimingMode: 0
   OnComplete:
   - {fileID: 1369863873}
 --- !u!1 &1632072639
@@ -791,6 +841,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -884,6 +936,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -955,8 +1009,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Profile: {fileID: 0}
   m_StaticLightingSkyUniqueID: 0
-  m_SkySettings: {fileID: 0}
-  m_SkySettingsFromProfile: {fileID: 0}
 --- !u!4 &1908802334
 Transform:
   m_ObjectHideFlags: 1
