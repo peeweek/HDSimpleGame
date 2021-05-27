@@ -5,6 +5,7 @@ using GameplayIngredients.Actions;
 using ThirdPersonController;
 using GameplayIngredients;
 
+[Callable("HDSimpleGame", "Misc/ic-callable.png")]
 public class CharacterNavigateToTargetAction : ActionBase
 {
     public Character TargetCharacter;

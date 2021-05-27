@@ -1,8 +1,8 @@
 ﻿using GameplayIngredients.Actions;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using GameplayIngredients;
 
+[Callable("HDSimpleGame", "Misc/ic-callable.png")]
 public class ExecuteConsoleCommandAction : ActionBase
 {
     public string command = "screenshot";

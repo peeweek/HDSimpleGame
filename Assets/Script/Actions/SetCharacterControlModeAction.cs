@@ -1,9 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using GameplayIngredients.Actions;
 using ThirdPersonController;
+using GameplayIngredients;
 
+[Callable("HDSimpleGame", "Misc/ic-callable.png")]
 public class SetCharacterControlModeAction : ActionBase
 {
     public Character TargetCharacter;

@@ -102,7 +102,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8470637633245833380}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8470637632021532262
 MonoBehaviour:
@@ -118,7 +118,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnStateEnter:
   - {fileID: 8470637632021531033}
-  - {fileID: 8470637632552763410}
   OnStateExit: []
   OnStateUpdate: []
 --- !u!114 &8470637632021531033
@@ -315,7 +314,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8470637633245833380}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8470637632534860419
 MonoBehaviour:
@@ -331,7 +330,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnStateEnter:
   - {fileID: 8470637632534860418}
-  - {fileID: 8470637632552763410}
   OnStateExit: []
   OnStateUpdate: []
 --- !u!114 &8470637632534860418
@@ -354,119 +352,6 @@ MonoBehaviour:
   IntValue: 4
   BoolValue: 0
   FloatValue: 0
---- !u!1 &8470637632552763401
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8470637632552763414}
-  - component: {fileID: 8470637632552763410}
-  - component: {fileID: 8470637632552763413}
-  - component: {fileID: 8470637632552763412}
-  - component: {fileID: 455168670581015766}
-  - component: {fileID: 8470637632552763415}
-  m_Layer: 0
-  m_Name: Respawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8470637632552763414
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8470637632552763401}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 8470637633435380571}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8470637632552763410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8470637632552763401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 188f26a3e283eda41a6522c93af8996a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Respawn Player
-  Calls:
-  - {fileID: 8470637632552763413}
---- !u!114 &8470637632552763413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8470637632552763401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 179702d831a2b2e40820ab80d04ed4b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: SetInstigatorFromFactoryLogic
-  Next:
-  - {fileID: 8470637632552763412}
-  - {fileID: 455168670581015766}
-  Factory: {fileID: 8470637633435380570}
-  FactoryIndex: 0
-  ContinueEvenIfNull: 1
---- !u!114 &8470637632552763412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8470637632552763401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e0d20f2fb594be42acf7e05001c2932, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Destroy Instigator (Player)
-  ObjectsToDestroy: []
-  DestroyInstigator: 1
---- !u!114 &455168670581015766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8470637632552763401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67b9c6de4d14ca04297d8e1b9884a16e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: NextFrameLogic
-  OnNextFrame:
-  - {fileID: 8470637632552763415}
---- !u!114 &8470637632552763415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8470637632552763401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc5c180f8bf863b4da50cd3ac688bda3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Spawn New Player
-  factory: {fileID: 8470637633435380570}
 --- !u!1 &8470637632668659369
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,7 +526,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8470637633245833380}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8470637633244200108
 MonoBehaviour:
@@ -657,7 +542,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnStateEnter:
   - {fileID: 8470637633244200111}
-  - {fileID: 8470637632552763410}
   OnStateExit: []
   OnStateUpdate: []
 --- !u!114 &8470637633244200111
@@ -708,7 +592,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8470637633435380571}
   - {fileID: 8470637633411412927}
   - {fileID: 8470637633247320313}
   - {fileID: 8470637633244200110}
@@ -768,7 +651,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8470637633245833380}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8470637633247320263
 MonoBehaviour:
@@ -784,7 +667,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnStateEnter:
   - {fileID: 8470637633247320262}
-  - {fileID: 8470637632552763410}
   OnStateExit: []
   OnStateUpdate: []
 --- !u!114 &8470637633247320262
@@ -914,7 +796,7 @@ Transform:
   - {fileID: 8470637632765784869}
   - {fileID: 8470637632504734867}
   m_Father: {fileID: 8470637633245833380}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8470637633411412926
 MonoBehaviour:
@@ -932,69 +814,6 @@ MonoBehaviour:
   - {fileID: 8470637633313571472}
   OnStateExit: []
   OnStateUpdate: []
---- !u!1 &8470637633435380573
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8470637633435380571}
-  - component: {fileID: 8470637633435380570}
-  m_Layer: 0
-  m_Name: Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8470637633435380571
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8470637633435380573}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 8470637632552763414}
-  m_Father: {fileID: 8470637633245833380}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8470637633435380570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8470637633435380573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d69cd00f40343984eaf286a54b36348c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FactoryBlueprints:
-  - {fileID: 3354862971841549540, guid: 5581b5fae7896344f98610b7b526c74a, type: 3}
-  - {fileID: 6275821892175646471, guid: 025ac9140bf0f4144847f67caec8fb4c, type: 3}
-  - {fileID: 1834632679888139607, guid: f6fdd26474a83494d95fdc599b33e504, type: 3}
-  - {fileID: 5712569581741774391, guid: 61fa617a6e641ae43839803478a95f6f, type: 3}
-  - {fileID: 4102427450031919394, guid: 3ccbe4af8ffa69a43980b3fbf2ded2c4, type: 3}
-  blueprintSelecionMode: 3
-  gameSaveLocation: 1
-  gameSaveVariableName: PlayerType
-  defaultGameSaveIndex: 0
-  SpawnTarget: {fileID: 8470637633435380573}
-  spawnLocation: 1
-  SacrificeOldest: 0
-  RespawnTarget: 1
-  RespawnDelay: 3
-  ReapInstancesOnDestroy: 1
-  MaxInstances: 1
-  OnSpawn: []
-  OnRespawn: []
 --- !u!1 &8470637634034483295
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,7 +844,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8470637633245833380}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8470637634034483290
 MonoBehaviour:
@@ -1041,7 +860,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnStateEnter:
   - {fileID: 8470637634034483293}
-  - {fileID: 8470637632552763410}
   OnStateExit: []
   OnStateUpdate: []
 --- !u!114 &8470637634034483293
